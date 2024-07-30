@@ -1,0 +1,19 @@
+{
+  "template"  : "homeContent",
+  "components": {
+      "header": {
+        "megamenu" :  {
+          "megamenu-panel-content" : {},
+          "megamenu-subpanel" : {}
+        },
+        "search" :    {},
+        "iconsmenu" : {}
+      },
+      "main": {
+        "standard-button" : {},
+        "lg-standard-button" : {}
+      },
+      "footer": {}
+    }
+}
+  

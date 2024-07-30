@@ -1,0 +1,206 @@
+:root {
+  // colorad
+  --partex-yellow: rgba(255, 210, 45, 1);
+  --graphite:      rgba(88, 92, 96, 1);
+  --beige:         rgba(234, 229, 218, 1);
+  --partex-black:  rgba(45, 45, 45, 1);
+  --gray:          rgba(128, 128, 128, 1);
+  --light-gray:    rgba(200, 200, 200 ,1);
+  // fonts
+  --base-font:     "Roboto", Helvetica, Arial, sans-serif;
+  --light:          300; // light weight of font
+  --medium:         500; // medium weight of font
+  --bold:           700; // bold weight of font
+
+  //page layout
+  --unit:          calc(100vw * .015625); // 1/64 of the viewport
+  --half-grid-unit:calc(var(--unit) * 2); // 1/32
+  --grid-unit:     calc(var(--unit) * 4); // 1/16
+
+  //misc
+  --grid-border:   1px dotted rgba(255, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+html {
+  font-size: .8vw;
+}
+
+body {
+    font-family: var(--base-font);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    main {
+      overflow: hidden;
+      width: 100%;
+      max-width: calc(var(--grid-unit) * 16);
+    }
+  }
+
+  p, a, ol, ul, li, span {
+    font-family: var(--base-font);
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--partex-black);
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: var(--medium);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      color: var(--gray);
+      border-bottom: 1px dotted var(--gray);
+    }
+  }
+
+  .container {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &.devmode {
+      border: var(--grid-border);
+    }
+  } 
+ 
+  .logo {
+    background-image: url('/images/partex-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .brand-box {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--partex-yellow);
+    width: 100%;
+    height: 100%;
+  }
+
+  .sm-brand-box { 
+    content: " ";
+    width: 100%;
+    max-width: var(--unit);
+    height: var(--unit);
+    background-color: var(--partex-yellow);
+  }
+
+  //layout
+  header {
+    padding: 0px;
+    text-align: center;
+    padding: var(--unit) var(--grid-unit);
+    width: calc(100% - (var(--grid-unit * 2)));
+    max-width: calc(var(--grid-unit) * 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    @media screen and (max-width: 1600px) {
+      & {     padding: var(--unit) var(--half-grid-unit);   }
+    }
+     
+    .logo {
+      width: 12.55556rem;
+      height: 1.44444rem;
+      flex-shrink: 0;
+      position: relative;
+      top: 4px;
+    }
+  }
+ 
+  main {
+    padding: 0px var(--grid-unit);
+    display: none !important;
+    // screen size overrides
+    @media screen and (max-width: 1600px) {
+      & { padding: 0px var(--half-grid-unit) };
+    }
+    &.loaded {
+      display: flex !important;
+    }
+  }
+
+  content {
+    padding: 0px var(--grid-unit);
+    // screen size overrides
+    @media screen and (max-width: 1600px) {
+      & { padding: 0px var(--half-grid-unit) };
+    }
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--beige);
+    text-align: center;
+    padding: 0px 0px 0px var(--grid-unit);
+    margin-top: var(--half-grid-unit);
+    // screen size overrides
+    @media screen and (max-width: 1600px) {
+      & { padding: 0px 0px 0px var(--half-grid-unit); };
+    }
+
+    .logo {
+      width: 12.55556rem;
+      height: 1.44444rem;
+      flex-shrink: 0;
+    }
+
+    & > .brand-box {
+      font-size: 1.7rem;
+      font-weight: 500;
+      padding-bottom: var(--unit);
+      width: calc(var(--grid-unit) * 3);
+      height: calc((var(--grid-unit) * 3) - var(--unit));
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: var(--half-grid-unit);
+    }
+  }
+
+  // FOR DEBUGGING
+  #DevModeGrid {
+    display: none;
+    &.devmode {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      max-width: calc(var(--grid-unit) * 16);
+      height: 100vh;
+      display: flex;
+      div {
+        border-right: var(--grid-border);
+        height: 100%;
+        width: var(--grid-unit);
+      }
+    }
+  }

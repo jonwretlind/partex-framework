@@ -1,0 +1,32 @@
+{
+    "items": [
+        {
+        "label": "Markers",
+        "link":  "#",
+        "submenu" : "markers-submenu"
+        },
+        {
+        "label": "Accessories",
+        "link":  "#",
+        "submenu" : "accessories-submenu"
+        },
+        {
+        "label": "Solutions",
+        "link":  "#",
+        "submenu" : "solutions-submenu"
+        },
+        {
+        "label": "Shop All",
+        "link":  "#"
+        },
+        {
+        "label": "Mark Online <span class='sm-icon'><img src='/images/open-in-new-window-icon.png' /></span>",
+        "link":  "#"
+        },
+        {
+        "label": "About Us",
+        "link":  "#",
+        "submenu" : "about-us-submenu"
+        }
+    ]
+}

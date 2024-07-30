@@ -1,0 +1,43 @@
+#Megamenu {
+    width: calc(var(--grid-unit) * 6);
+}
+#Megamenu ul.menu {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: unset;
+}
+
+#Megamenu li.menu.item {
+    display: block;
+}
+
+#Megamenu li.menu.item > a {
+    text-decoration: none;
+    color: var(--graphite);
+}
+
+#Megamenu li.menu.item > a:hover {
+    font-weight: var(--bold);
+}
+
+#MegamenuContainer {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    min-height: calc(var(--grid-unit) * 2); /* some default height */
+    z-index: 100;
+}
+
+.megamenu-panel {
+    display: none;
+    width: 100%;
+    min-height: fit-content;
+    background-color: var(--beige);
+    padding: var(--unit) var(--half-grid-unit);
+}
+
+.megamenu-panel.active:not(.void) {
+    display: flex;
+}

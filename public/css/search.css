@@ -1,0 +1,8 @@
+/* Styles for Search Bar Component */
+#Search {
+    position: relative;
+    top: 2px;
+    width: calc(var(--half-grid-unit) * 4);
+    height: var(--unit);
+    border: 1px solid #777;
+}
