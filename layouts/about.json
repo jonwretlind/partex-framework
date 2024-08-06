@@ -1,0 +1,17 @@
+{
+    "template"  : "aboutContent",
+    "components": {
+        "header": {
+          "megamenu" :  {
+            "megamenu-panel-content" : {},
+            "megamenu-subpanel" : {}
+          },
+          "search" :    {},
+          "iconsmenu" : {}
+        },
+        "about": {
+        },
+        "footer": {}
+      }
+  }
+    

@@ -1,0 +1,17 @@
+{
+    "template"  : "shopContent",
+    "components": {
+        "header": {
+          "megamenu" :  {
+            "megamenu-panel-content" : {},
+            "megamenu-subpanel" : {}
+          },
+          "search" :    {},
+          "iconsmenu" : {}
+        },
+        "shop": {
+        },
+        "footer": {}
+      }
+  }
+    

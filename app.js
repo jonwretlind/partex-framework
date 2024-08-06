@@ -29,6 +29,7 @@ app.get('/:page', (req, res) => {
   const layoutPath = path.join(__dirname, 'layouts', `${page}.json`);
   const templateHead = path.join(__dirname, 'templates', 'templateHead.html');
   const templateFoot = path.join(__dirname, 'templates', 'templateFoot.html');
+  console.log("layoutpath: ", layoutPath);
 
   // Parse JSON layout file and replace with HTML components
   // for the {{ }} tags embedded in the HTML

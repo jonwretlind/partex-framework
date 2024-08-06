@@ -17,15 +17,15 @@
         },
         {
         "label": "Shop All",
-        "link":  "#"
+        "link":  "/shop"
         },
         {
         "label": "Mark Online <span class='sm-icon'><img src='/images/open-in-new-window-icon.png' /></span>",
-        "link":  "#"
+        "link":  "https://www.partex.us/shop/markonline/"
         },
         {
         "label": "About Us",
-        "link":  "#",
+        "link":  "/about",
         "submenu" : "about-us-submenu"
         }
     ]
