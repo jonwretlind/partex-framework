@@ -28,11 +28,11 @@
     width: 100%;
     min-height: calc(var(--grid-unit) * 2); /* some default height */
     z-index: 100;
+    overflow: hidden;
 }
 
 .megamenu-panel {
     display: none;
-    width: 100%;
     min-height: fit-content;
     background-color: var(--beige);
     padding: var(--unit) var(--half-grid-unit);
@@ -40,4 +40,8 @@
 
 .megamenu-panel.active:not(.void) {
     display: flex;
+}
+
+.megamenu-subpanel {
+    width: 100%;
 }

@@ -17,7 +17,7 @@
                 if (menu.items[item].submenu) {
                     submenus.push({"item" : item, "label" : menu.items[item].submenu});
                 };
-                menuHtml += `<li onmouseenter="rollOver('MainmenuButton_${item}', 'MegamenuPanel_${item}')" onmouseleave="rollOut('MainmenuButton_${item}', 'MegamenuPanel_${item}')" id='MainmenuButton_${item}' class='menu item'><a href='${menu.items[item].link}'>` + menu.items[item].label + "</a></li>";
+                menuHtml += `<li onmouseenter="removeActive('.megamenu-panel'); rollOver('MainmenuButton_${item}', 'MegamenuPanel_${item}')" id='MainmenuButton_${item}' class='menu item'><a href='${menu.items[item].link}'>` + menu.items[item].label + "</a></li>";
                 menuContHtml += `<div id='MegamenuPanel_${item}' class='megamenu-panel void'>{{ megamenu-panel-content }}</div>`;
             };
 
@@ -32,7 +32,7 @@
             )
             .then(
                 addLabels()
-            );
+            )
             
     });
 
@@ -45,7 +45,7 @@
             let submenuID = 'MegamenuPanel_' + submenus[sub].item;
             submenuContainer[sub] = document.getElementById(submenuID);
             submenuLabel = "{{ " + submenus[sub].label + " }}";
-            submenuContHtml  = `<div class='megamenu-subpanel'>${submenuLabel}</div>`;
+            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive('.megamenu-panel')">${submenuLabel}</div>`;
             // add submenu containers
             submenuContainer[sub].innerHTML = submenuContHtml;
         }
@@ -64,35 +64,5 @@
             submenuPanels[subIdx].classList.add(sub.label);
             submenuPanels[subIdx].classList.remove('void');
         }
-    }
-
-    async function readFile(file, callback) {
-        //console.log("readfile");
-        var rawFile = new XMLHttpRequest();
-        rawFile.overrideMimeType("application/json");
-        rawFile.open("GET", file, true);
-        rawFile.onreadystatechange = function() {
-            if (rawFile.readyState === 4 && rawFile.status == "200") {
-                callback(rawFile.responseText);
-            }
-        }
-        rawFile.send(null);
-    };
-        
-})();
-
-
-// UTILITY FUNCTIONS
-// must be accessible by page DOM, so not encapsulated
-function rollOver(eleId, targetId) {
-    const ele = document.getElementById(eleId);
-    const target = document.getElementById(targetId);
-    ele.classList.add('active');
-    target.classList.add('active');
-}
-function rollOut(eleId, targetId) {
-    const ele = document.getElementById(eleId);
-    const target = document.getElementById(targetId);
-    ele.classList.remove('active');
-    target.classList.remove('active');
-}
+    }   
+})(); 

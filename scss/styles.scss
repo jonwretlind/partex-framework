@@ -16,6 +16,8 @@
   --unit:          calc(100vw * .015625); // 1/64 of the viewport
   --half-grid-unit:calc(var(--unit) * 2); // 1/32
   --grid-unit:     calc(var(--unit) * 4); // 1/16
+  --page-width:    calc(var(--grid-unit) * 16);
+  --content-width:    calc(var(--grid-unit) * 14);
 
   //misc
   --grid-border:   1px dotted rgba(255, 0, 0, 0.2);
@@ -89,6 +91,9 @@ body {
     background-image: url('/images/partex-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
+    &.bw {
+      background-image: url('/images/Partex_Logo_horizontal_black_digital.png');
+    }
   }
 
   .brand-box {
@@ -115,7 +120,7 @@ body {
     text-align: center;
     padding: var(--unit) var(--grid-unit);
     width: calc(100% - (var(--grid-unit * 2)));
-    max-width: calc(var(--grid-unit) * 16);
+    max-width: var(--page-width);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
