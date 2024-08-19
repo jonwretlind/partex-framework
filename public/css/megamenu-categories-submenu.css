@@ -1,5 +1,5 @@
 .submenu-categories {
-    width: calc(var(--content-width) - var(--grid-unit));
+    max-width: calc(var(--content-width) - var(--grid-unit));
     margin-left: calc(var(--unit) / 4);
     min-height: 50px;
     list-style: none;
@@ -29,13 +29,63 @@
     text-shadow: 0 0 3px black;
     background-color: rgba(0,0,0,0.3);
 }
-
 .submenu-products-list {
     width: calc(var(--content-width) - var(--unit));
-    margin-left: var(--half-grid-unit);
-    min-height: 200px;
-    border: 1px solid var(--light-gray);
+    margin-left: calc(var(--unit) / 2);
+    height: calc(var(--grid-unit) * 2.5);
+    border: 1px solid var(
+    --light-gray);
     background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.submenu-products-list > .submenu-categories {
+    max-width: calc(var(--content-width) - var(--grid-unit));
+    margin-left: calc(var(--unit) / 4);
+    min-height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.list-item-container {
+    display: flex;
+    height: var(--half-grid-unit);
+    margin-top: calc(var(--unit) / 4);
+    margin-bottom: calc(var(--unit) / 4);
+    padding: calc(var(--unit) / 4);
+    border-bottom: 1px solid transparent;
+}
+.list-item-container:hover {
+    border-bottom: 1px solid var(--light-gray);
+}
+.submenu-category-listing-item a {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: calc(var(--grid-unit));
+    transition: none !important;
+}
+.submenu-category-listing-item a:hover {
+    border-bottom: unset;
+}
+.submenu-category-listing-item .submenu-listing-image {
+    width: 100%;
+    min-width: calc(var(--grid-unit));
+    height: calc(var(--half-grid-unit));
+    background-size: contain;
+    margin-right: var(--unit);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.submenu-category-listing-item .label {
+    width: 100%;
+    text-align: left;
+    height: calc(var(--half-grid-unit));
+    min-width: calc(var(--grid-unit) * 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: var(--medium);
 }

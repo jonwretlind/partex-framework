@@ -13,17 +13,17 @@ async function readFile(file, callback) {
     rawFile.send(null);
 };
 
-function rollOver(eleId, targetId) {
+function rollOver(eleId, targetID, targetID2) {
     const ele = document.getElementById(eleId);
-    const target = document.getElementById(targetId);
+    if (targetID)  {const target = document.getElementById(targetID); target.classList.add('active');}
+    if (targetID2) {const target2 = document.getElementById(targetID2); target2.classList.add('active');}
     ele.classList.add('active');
-    target.classList.add('active');
 }
-function rollOut(eleId, targetId) {
+function rollOut(eleId, targetID, targetID2) {
     const ele = document.getElementById(eleId);
-    const target = document.getElementById(targetId);
+    if (targetID)  {const target = document.getElementById(targetID); target.classList.remove('active');}
+    if (targetID2) {const target2 = document.getElementById(targetID2); target2.classList.remove('active');}
     ele.classList.remove('active');
-    target.classList.remove('active');
 }
 // removes 'active' from a set of elements defined by a class
 function removeActive(className) {

@@ -20,7 +20,7 @@ function markersCategoriesMenu() {
         await addHTML();       
     });
 };
-
+ 
 // populates the markers listing window depending on selected category
 function markersCategoriesListings(category, catLabel) {
     console.log('===== EXECUTING markersCategoriesListings() =====');
@@ -34,16 +34,18 @@ function markersCategoriesListings(category, catLabel) {
         let menuHtml = '';
         let listing = Object.values(list);
         console.log(listing);
-        let listItems = listing.category[0].catLabel;
+        let listItems = listing[0][0];
+        console.log(listItems);
         const listingsWindow = document.getElementsByClassName('submenu-products-list')[0];
         console.log("listingsWindow: ", listingsWindow);
         async function addHTML() {
-            for (item in listItems) {
-                menuHtml += `<a href='${list.items[item].link}'><div class='submenu-category-listing-item' style='background-image: url("${menu.items[item].imageUrl}");><div><div class="label">${menu.items[item].productName}</div></div></a>`;
+            for (item in listItems.WireMarkers) {
+                console.log('item: ', item, listItems.WireMarkers[item]);
+                menuHtml += `<div class='list-item-container'><div class='submenu-category-listing-item'><a href='${listItems.WireMarkers[item].link}'><div class='submenu-listing-image' style='background-image: url("${listItems.WireMarkers[item].imageUrl}");'></div><div class="label">${listItems.WireMarkers[item].productName}</div></a></div></div>`;
             };
 
             //add the components to the page
-            //listingsWindow.innerHTML = "<ul class='submenu-categories'>" + menuHtml + "</ul>";
+            listingsWindow.innerHTML = "<ul class='submenu-categories'>" + menuHtml + "</ul>";
         }    
         await addHTML();       
     });
