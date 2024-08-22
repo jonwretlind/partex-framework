@@ -12,12 +12,12 @@
         },
         {
         "label": "Solutions",
-        "link":  "#",
+        "link":  "/solutions",
         "submenu" : "solutions-submenu"
         },
         {
         "label": "Shop All",
-        "link":  "/shop"
+        "link":  "/shop?page=all"
         },
         {
         "label": "Mark Online <span class='sm-icon'><img src='/images/open-in-new-window-icon.png' /></span>",

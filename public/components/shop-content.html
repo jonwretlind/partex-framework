@@ -1,0 +1,20 @@
+
+<!-- shop-content template -->
+{{ secondary-page-hero }}
+{{ app-breadcrumb }}
+<div class="container-flex">
+    {{ sidebar-filter }}
+    <div class="section-product-showcase">
+        <div class="product-showcase-filter-container">
+            {{ app-pagination }}
+            {{ app-page-filters-dropdowns }}
+        </div>
+        <div class="section-product-showcase-inner">
+            {{ sm-product-card }}
+        </div>
+        <div class="pagination-container">
+            {{ app-pagination }}
+            <span class="navigate-top-text">Back to Top</span>
+        </div>
+    </div>
+</div>

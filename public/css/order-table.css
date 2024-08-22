@@ -1,0 +1,91 @@
+.container-customer-portal>.portal-orders-section>.orders-table-container>table {
+  width: 100%;
+  border-collapse: collapse !important;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>thead>tr {
+  text-align: left !important;
+  border-bottom: 1px solid #a7a7a7;
+  font-weight: 900;
+  font-size: 0.875rem;
+  /* padding: 0rem 0rem 0.9rem 0rem; */
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>thead>tr>th:nth-child(1) {
+  width: 30%;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>thead>tr>th:nth-child(2) {
+  width: 6%;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>thead>tr>th:nth-child(3) {
+  width: 10%;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>thead>tr>th:nth-child(4) {
+  width: 14%;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>thead>tr>th:nth-child(5) {
+  width: 15%;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr:not(:last-child) {
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-info-cell {
+  display: flex;
+  gap: 3rem;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-info-cell>span:nth-child(1)>img {
+  width: 11.25rem;
+  height: 7rem;
+  border: 1px solid #e9e9e9;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-info-cell>span:nth-child(2) {
+  font-weight: 600;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-status-cell>.order-status-opt-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-status-cell>.order-status-opt-box>.order-status {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-status-cell>.order-status-opt-box>.order-status>b {
+  font-weight: 900;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-status-cell>.order-status-opt-box>.order-opts-btn {
+  background-color: var(--graphite);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.4rem 0rem;
+  letter-spacing: 0.2rem;
+  transition: 0.3s;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container>table>tbody>tr>td.item-status-cell>.order-status-opt-box>.order-opts-btn:hover {
+  background-color: black;
+}
+
+td {
+  padding-top: 2rem;
+  padding-bottom: 1.875rem;
+  /* padding-right: 20px; */
+  vertical-align: top;
+  font-size: 1.125rem;
+}

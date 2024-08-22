@@ -26,11 +26,9 @@ function rollOut(eleId, targetID, targetID2) {
     ele.classList.remove('active');
 }
 // removes 'active' from a set of elements defined by a class
-function removeActive(className) {
-    const childrens = document.querySelectorAll(className);
-    childrens.forEach(function(elem) {
-      elem.classList.remove("active");
-    });
+function removeActive(ele) {
+    const select = document.querySelector(ele);
+    if (select) select.classList.remove("active");
 }
 
 // function to wait for a specific element to be loaded before executing 

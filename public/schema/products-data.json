@@ -1,0 +1,102 @@
+{
+    "Products": {
+        "Category" : {
+            "Markers" : {
+                "Wire" : { [
+                    {
+                        "productName": "PA - Closed Profile Single Character Marker",
+                        "imageUrl": "../images/products/image14.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PY - Markers for Wires <2mm Diameter",
+                        "imageUrl": "../images/products/image15.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PA+/PC/PO/PY - Multi-Character Marking",
+                        "imageUrl": "../images/products/image16.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PT+ - Marker Sleeve with Label Pocket",
+                        "imageUrl": "../images/products/image17.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PC -Single Character Open Markers",
+                        "imageUrl": "../images/products/image18.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PHZF - Continuous Flat Heat Shrink",
+                        "imageUrl": "../images/products/image19.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PT+ - PA Type Sleeve",
+                        "imageUrl": "../images/products/image20.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PTC - Multi-Character Marking",
+                        "imageUrl": "../images/products/image21.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PTZ+ - Multi-Character Marking, Halogen Free",
+                        "imageUrl": "../images/products/image22.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PHZ - Continuous Heat Shrink",
+                        "imageUrl": "../images/products/image23.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PO - Oval Profile",
+                        "imageUrl": "../images/products/image25.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PK+ - Single Character Markers",
+                        "imageUrl": "../images/products/image26.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "MG - Ladder Style Heat Shrink, Military Grade",
+                        "imageUrl": "../images/products/image27.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "HZ - Halogen Free Heat Shrink Markers",
+                        "imageUrl": "../images/products/image28.jpeg",
+                        "link": ""                                     
+                  },
+                  {
+                        "productName": "PCT - Open Wire Marker",
+                        "imageUrl": "../images/products/image29.jpeg",
+                        "link": ""                                     
+                  }
+                ]
+                },
+                "Cable" : {
+
+                },
+                "Steel" : {
+
+                },
+                "ClipOn" : {
+
+                },
+                "Component" : {
+
+                },
+                "Plates" : {
+
+                }
+            },
+            "Accessories" : {}
+        }
+    }
+}

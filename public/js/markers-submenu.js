@@ -4,7 +4,7 @@ function markersCategoriesMenu() {
 
     /* ========= READING AND FILTERING MENUS ========== */
     // read relative to public folder
-    readFile('./js/markers-submenu-categories.json', async (data) => {
+    readFile('./schema/markers-submenu-categories.json', async (data) => {
         let menu = JSON.parse(data);
         let menuHtml = '';
         const categoryMenu = document.getElementById('MarkersCategoryMenu');
@@ -28,7 +28,7 @@ function markersCategoriesListings(category, catLabel) {
 
     /* ========= READING AND FILTERING MENUS ========== */
     // read relative to public folder
-    readFile('./js/megamenu-category-listings.json', async (data) => {
+    readFile('./schema/megamenu-category-listings.json', async (data) => {
         console.log("category: ", category,"\ncatLabel: ", catLabel);
         let list = JSON.parse(data);
         let menuHtml = '';

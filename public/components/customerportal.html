@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Portal</title>
+
+
+    <link rel="stylesheet" href="../css/breadcrumb.css" type="text/css">
+    <link rel="stylesheet" href="../css/product-card.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/megamenu.css" type="text/css">
+    <link rel="stylesheet" href="../css/search.css" type="text/css">
+    <link rel="stylesheet" href="../css/customer-portal.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconsmenu.css" type="text/css">
+    <link rel="stylesheet" href="../css/order-table.css" type="text/css">
+
+</head>
+
+<body>
+
+    <main id="Main" class="container devmode loaded">
+
+
+        <content>
+
+
+            <header>
+                <div class="logo"></div>
+                <div id="Megamenu">
+                    <ul class="menu">
+                        <li onmouseenter="rollOver('MainmenuButton_0', 'MegamenuPanel_0')"
+                            onmouseleave="rollOut('MainmenuButton_0', 'MegamenuPanel_0')" id="MainmenuButton_0"
+                            class="menu item markers-submenu"><a href="#">Markers</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_1', 'MegamenuPanel_1')"
+                            onmouseleave="rollOut('MainmenuButton_1', 'MegamenuPanel_1')" id="MainmenuButton_1"
+                            class="menu item accessories-submenu"><a href="#">Accessories</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_2', 'MegamenuPanel_2')"
+                            onmouseleave="rollOut('MainmenuButton_2', 'MegamenuPanel_2')" id="MainmenuButton_2"
+                            class="menu item solutions-submenu"><a href="#">Solutions</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_3', 'MegamenuPanel_3')"
+                            onmouseleave="rollOut('MainmenuButton_3', 'MegamenuPanel_3')" id="MainmenuButton_3"
+                            class="menu item"><a href="#">Shop All</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_4', 'MegamenuPanel_4')"
+                            onmouseleave="rollOut('MainmenuButton_4', 'MegamenuPanel_4')" id="MainmenuButton_4"
+                            class="menu item"><a href="#">Mark Online <span class="sm-icon"><img
+                                        src="../images/open-in-new-window-icon.png"></span></a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_5', 'MegamenuPanel_5')"
+                            onmouseleave="rollOut('MainmenuButton_5', 'MegamenuPanel_5')" id="MainmenuButton_5"
+                            class="menu item about-us-submenu"><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <!-- MEGAMENU CODE -->
+                <div id="MegamenuContainer" class="container">
+                    <!-- Dynamically insert menu elements here -->
+                </div>
+                <div id="Search">
+                    <!-- Search Component -->
+                </div>
+                <div>
+                    <div id="IconsMenu">
+                        <!-- Icons Component -->
+                        <div class="icon-group">
+                            <div class="profile icon"><img src='../images/profile-icon.png' /></div>
+                            <div class="globe icon"><img src='../images/globe-icon.png' /></div>
+                            <div class="star icon"><img src='../images/star-icon.png' /></div>
+                            <div class="cart icon"><img src='../images/cart-icon.png' /></div>
+                        </div>
+                        <div class="sm-brand-box"></div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- app-breadcrumb... -->
+            <div class="app-breadcrumb-container">
+                <div class="breadcrumb">
+                    <span class="breadcrumb-item"><img class="breadcrumb-icon" src="../images/home-icon.png" /></span>
+                    <span class="breadcrumb-item"><small class="active">Customer Portal</small></span>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container-customer-portal">
+                <div class="portal-nav-section">
+
+                    <div class="customer-activity-nav">
+                        <nav>
+                            <span class="nav-item">My Profile</span>
+                            <span class="nav-item active">My Orders & History</span>
+                            <span class="nav-item">My Favorites Lists</span>
+                            <span class="nav-item">Software Licenses</span>
+                            <span class="nav-item">Log out</span>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="portal-orders-section">
+                    <h3>My Team’s Current Orders</h3>
+                    <div class="orders-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ITEMS</th>
+                                    <th>QTY</th>
+                                    <th>COST</th>
+                                    <th>DATE ORDERED</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="item-info-cell">
+                                        <span>
+                                            <img src="../images/product-images/partex-marker-1.png" alt="">
+                                        </span>
+                                        <span>
+                                            MG - Ladder Style Heat Shrink, Military Grade
+                                        </span>
+                                    </td>
+                                    <td class="item-qty-cell">2</td>
+                                    <td class="item-cost-cell">$649.20</td>
+                                    <td class="date-cell">30.05.2024</td>
+                                    <td class="item-status-cell">
+                                        <div class="order-status-opt-box">
+                                            <small class="order-status"><b>Status:</b> PENDING</small>
+                                            <span class="order-opts-btn">Track order</span>
+                                            <span class="order-opts-btn">Leave review</span>
+                                            <span class="order-opts-btn">Reorder</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="item-info-cell">
+                                        <span>
+                                            <img src="../images/product-images/partex-marker-1.png" alt="">
+                                        </span>
+                                        <span>
+                                            MG - Ladder Style Heat Shrink, Military Grade
+                                        </span>
+                                    </td>
+                                    <td class="item-qty-cell">2</td>
+                                    <td class="item-cost-cell">$649.20</td>
+                                    <td class="date-cell">30.05.2024</td>
+                                    <td class="item-status-cell">
+                                        <div class="order-status-opt-box">
+                                            <small class="order-status"><b>Status:</b> PENDING</small>
+                                            <span class="order-opts-btn">Track order</span>
+                                            <span class="order-opts-btn">Leave review</span>
+                                            <span class="order-opts-btn">Reorder</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+
+                    <h3>Order History</h3>
+                    <div class="orders-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ITEMS</th>
+                                    <th>QTY</th>
+                                    <th>COST</th>
+                                    <th>DATE ORDERED</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="item-info-cell">
+                                        <span>
+                                            <img src="../images/product-images/partex-marker-1.png" alt="">
+                                        </span>
+                                        <span>
+                                            MG - Ladder Style Heat Shrink, Military Grade
+                                        </span>
+                                    </td>
+                                    <td class="item-qty-cell">2</td>
+                                    <td class="item-cost-cell">$649.20</td>
+                                    <td class="date-cell">30.05.2024</td>
+                                    <td class="item-status-cell">
+                                        <div class="order-status-opt-box">
+                                            <small class="order-status"><b>Status:</b> PENDING</small>
+                                            <span class="order-opts-btn">Track order</span>
+                                            <span class="order-opts-btn">Leave review</span>
+                                            <span class="order-opts-btn">Reorder</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="item-info-cell">
+                                        <span>
+                                            <img src="../images/product-images/partex-marker-1.png" alt="">
+                                        </span>
+                                        <span>
+                                            MG - Ladder Style Heat Shrink, Military Grade
+                                        </span>
+                                    </td>
+                                    <td class="item-qty-cell">2</td>
+                                    <td class="item-cost-cell">$649.20</td>
+                                    <td class="date-cell">30.05.2024</td>
+                                    <td class="item-status-cell">
+                                        <div class="order-status-opt-box">
+                                            <small class="order-status"><b>Status:</b> PENDING</small>
+                                            <span class="order-opts-btn">Track order</span>
+                                            <span class="order-opts-btn">Leave review</span>
+                                            <span class="order-opts-btn">Reorder</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </content>
+
+        <footer>
+            <div class="footer-content">
+                <div class="logo"></div>
+                <p>© 2024 My Website</p>
+            </div>
+            <div class="brand-box">We mark the future</div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

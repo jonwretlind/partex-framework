@@ -5,7 +5,7 @@
 
     /* ========= READING AND FILTERING MENUS ========== */
     // read relative to public folder
-    readFile('./js/megamenu.json', async (data) => {
+    readFile('./schema/megamenu.json', async (data) => {
         let menu = JSON.parse(data);
         let menuHtml = '';
         let menuContHtml = '';
@@ -45,7 +45,9 @@
             let submenuID = 'MegamenuPanel_' + submenus[sub].item;
             submenuContainer[sub] = document.getElementById(submenuID);
             submenuLabel = "{{ " + submenus[sub].label + " }}";
-            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive('#Megamenu .active')">${submenuLabel}</div>`;
+            var id = 'id*="MegamenuPanel_"';
+            var str = `'div[${id}] .active'`;
+            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive(${str})">${submenuLabel}</div>`;
             // add submenu containers
             submenuContainer[sub].innerHTML = submenuContHtml;
         }

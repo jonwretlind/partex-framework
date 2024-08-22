@@ -1,0 +1,52 @@
+.pagination-container {
+}
+
+.pagination-container > p {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin: 0.4rem 0rem;
+}
+
+.pagination-container > .pagination-btns-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pagination-container > .pagination-btns-container > .pagination-item {
+  font-size: 1rem;
+  text-align: center;
+  /* margin: 0 0.4rem; */
+  background-color: var(--beige);
+  color: var(--graphite);
+  padding: 0.2rem 0.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination-container > .pagination-btns-container > .pagination-item:hover {
+  background-color: var(--graphite);
+  color: #fff;
+}
+
+.pagination-container > .pagination-btns-container > .pagination-item.active {
+  background-color: var(--graphite);
+  color: #fff;
+}
+
+.pagination-container > .pagination-btns-container > .pagination-dots {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--graphite);
+}
+
+.pagination-container > .pagination-btns-container > .pagination-more {
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--graphite);
+}

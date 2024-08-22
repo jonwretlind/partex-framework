@@ -1,0 +1,31 @@
+.app-breadcrumb-container {
+  margin: 0rem 0rem 3.5rem 0rem;
+}
+
+.app-breadcrumb-container>.breadcrumb {
+  display: flex;
+  align-items: stretch;
+}
+
+.app-breadcrumb-container>.breadcrumb>.breadcrumb-item {
+  display: inline;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.app-breadcrumb-container>.breadcrumb>.breadcrumb-item>.active {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.app-breadcrumb-container>.breadcrumb>.breadcrumb-item>.breadcrumb-icon {
+  width: 1.25rem;
+  height: 1.063rem;
+}
+
+.app-breadcrumb-container>.breadcrumb>.breadcrumb-item+.breadcrumb-item:before {
+  padding: 0rem 0.875rem;
+  content: "│";
+}

@@ -1,0 +1,46 @@
+.container-customer-portal {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.container-customer-portal>.portal-nav-section {
+  flex-basis: 10%;
+  /* border: 1px dashed; */
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.container-customer-portal>.portal-nav-section>.customer-activity-nav nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.container-customer-portal>.portal-nav-section>.customer-activity-nav>nav>.nav-item {
+  font-weight: 300;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+}
+
+.container-customer-portal>.portal-nav-section>.customer-activity-nav>nav>.nav-item:hover {
+  font-weight: var(--extra-bold);
+}
+
+.container-customer-portal>.portal-nav-section>.customer-activity-nav>nav>.nav-item.active {
+  font-weight: var(--extra-bold);
+}
+
+.container-customer-portal>.portal-orders-section {
+  flex-basis: 90%;
+}
+
+.container-customer-portal>.portal-orders-section>h3 {
+  margin-top: 0px;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.container-customer-portal>.portal-orders-section>.orders-table-container {
+  margin: 1.5rem 0rem 1.8rem 0rem;
+}
