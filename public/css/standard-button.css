@@ -1,6 +1,5 @@
 .standard-btn, .lg-standard-btn {
     background-color: var(--graphite);
-    color: white;
     border: none;
     padding: 0 var(--unit) 0 0;
     margin: calc(var(--unit) / 2) 0px;
@@ -11,7 +10,11 @@
     width: 100%;
     max-width: calc(var(--grid-unit) * 3);
 }
-
+.standard-btn *, .lg-standard-btn * {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: var(--medium);
+}
 .lg-standard-btn {
   transform: scale(1.15);
   transform-origin: top left;
@@ -41,8 +44,12 @@
   .standard-btn:hover,
   .lg-standard-btn:hover {
     background-color: var(--beige);
-    color: var(--partex-black);
     box-shadow: 2px 2px 3px var(--light-gray);
+  }
+  
+  .standard-btn:hover span,
+  .lg-standard-btn:hover span {
+    color: var(--partex-black);
   }
   
   .standard-btn:hover .sm-brand-box,
@@ -71,3 +78,6 @@
         opacity: 1;
     }
   }
+/* CSS HACK TO REPLACE BUTTON TEXT CONTENT */
+.standard-btn .btn-label span::after { content: "Standard Button"; }
+.lg-standard-btn .btn-label span::after { content: "Large Standard Button"; }

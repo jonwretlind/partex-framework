@@ -17,7 +17,7 @@
                 if (menu.items[item].submenu) {
                     submenus.push({"item" : item, "label" : menu.items[item].submenu});
                 };
-                menuHtml += `<li onmouseenter="clearMenu('MegamenuContainer');  rollOver('MainmenuButton_${item}', 'MegamenuPanel_${item}', 'MegamenuContainer')"  id='MainmenuButton_${item}' class='menu item'><a href='${menu.items[item].link}'>` + menu.items[item].label + "</a></li>";
+                menuHtml += `<li onclick="clearMenu('MegamenuContainer');  rollOver('MainmenuButton_${item}', 'MegamenuPanel_${item}', 'MegamenuContainer')"  id='MainmenuButton_${item}' class='menu item'><a href='${menu.items[item].link}'>` + menu.items[item].label + "</a></li>";
                 menuContHtml += `<div id='MegamenuPanel_${item}' class='megamenu-panel void'>{{ megamenu-panel-content }}</div>`;
             };
 

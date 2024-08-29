@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/megamenu.css" type="text/css">
+    <link rel="stylesheet" href="../css/search.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconsmenu.css" type="text/css">
+    <link rel="stylesheet" href="../css/product-card.css" type="text/css">
+    <link rel="stylesheet" href="../css/standard-button.css" type="text/css">
+    <link rel="stylesheet" href="../css/homepage.css" type="text/css">
+    <link rel="stylesheet" href="../css/carousel.css" type="text/css">
+
+</head>
+
+<body>
+
+
+    <main id="Main" class="container devmode loaded">
+        <content>
+
+            <header>
+                <div class="logo"></div>
+                <div id="Megamenu">
+                    <ul class="menu">
+                        <li onmouseenter="rollOver('MainmenuButton_0', 'MegamenuPanel_0')"
+                            onmouseleave="rollOut('MainmenuButton_0', 'MegamenuPanel_0')" id="MainmenuButton_0"
+                            class="menu item markers-submenu"><a href="#">Markers</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_1', 'MegamenuPanel_1')"
+                            onmouseleave="rollOut('MainmenuButton_1', 'MegamenuPanel_1')" id="MainmenuButton_1"
+                            class="menu item accessories-submenu"><a href="#">Accessories</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_2', 'MegamenuPanel_2')"
+                            onmouseleave="rollOut('MainmenuButton_2', 'MegamenuPanel_2')" id="MainmenuButton_2"
+                            class="menu item solutions-submenu"><a href="#">Solutions</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_3', 'MegamenuPanel_3')"
+                            onmouseleave="rollOut('MainmenuButton_3', 'MegamenuPanel_3')" id="MainmenuButton_3"
+                            class="menu item"><a href="#">Shop All</a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_4', 'MegamenuPanel_4')"
+                            onmouseleave="rollOut('MainmenuButton_4', 'MegamenuPanel_4')" id="MainmenuButton_4"
+                            class="menu item"><a href="#">Mark Online <span class="sm-icon"><img
+                                        src="../images/open-in-new-window-icon.png"></span></a></li>
+                        <li onmouseenter="rollOver('MainmenuButton_5', 'MegamenuPanel_5')"
+                            onmouseleave="rollOut('MainmenuButton_5', 'MegamenuPanel_5')" id="MainmenuButton_5"
+                            class="menu item about-us-submenu"><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <!-- MEGAMENU CODE -->
+                <div id="MegamenuContainer" class="container">
+                    <!-- Dynamically insert menu elements here -->
+                </div>
+                <div id="Search">
+                    <!-- Search Component -->
+                </div>
+                <div>
+                    <div id="IconsMenu">
+                        <!-- Icons Component -->
+                        <div class="icon-group">
+                            <div class="profile icon"><img src='../images/profile-icon.png' /></div>
+                            <div class="globe icon"><img src='../images/globe-icon.png' /></div>
+                            <div class="star icon"><img src='../images/star-icon.png' /></div>
+                            <div class="cart icon"><img src='../images/cart-icon.png' /></div>
+                        </div>
+                        <div class="sm-brand-box"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="carousel-container">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="image-container">
+                            <img src="../images/carousel-images/Hero Slide 1.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-content-container">
+                            <div class="content-box">
+                                <h1 class="slide-main-text">Marking Systmes for every need.</h1>
+                                <p class="slide-sub-text">Providing fast, global service near you.</p>
+                            </div>
+
+                            <div class="cta-btn-box">
+                                <button class="standard-btn" aria-label="" aria-valuetext="">
+                                    <div class="sm-brand-box"></div>
+                                    <div class="btn-label">Cable & Wire Markers</div>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="text">
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, event)"></span>
+                                <span class="dot" onclick="currentSlide(2, event)"></span>
+                                <span class="dot" onclick="currentSlide(3, event)"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="image-container">
+                            <img src="../images/carousel-images/Hero Slide 2.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-content-container">
+                            <div class="content-box">
+                                <h1 class="slide-main-text text-light">Make your mark</h1>
+                                <p class="slide-sub-text text-light">Customize markers with Mark Online</p>
+                            </div>
+
+                            <div class="cta-btn-box">
+                                <button class="standard-btn" aria-label="" aria-valuetext="">
+                                    <div class="sm-brand-box"></div>
+                                    <div class="btn-label">Mark Online</div>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="text">
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, event)"></span>
+                                <span class="dot" onclick="currentSlide(2, event)"></span>
+                                <span class="dot" onclick="currentSlide(3, event)"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="image-container">
+                            <img src="../images/carousel-images/Hero Slide 3.png" style="width:100%">
+                        </div>
+
+                        <div class="slide-content-container">
+                            <div class="content-box">
+                                <h1 class="slide-main-text">Take charge</h1>
+                                <p class="slide-sub-text">Our customer portal puts you in control</p>
+                            </div>
+
+                            <div class="cta-btn-box">
+                                <button class="standard-btn" aria-label="" aria-valuetext="">
+                                    <div class="sm-brand-box"></div>
+                                    <div class="btn-label">Sign Up Today</div>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="text">
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, event)"></span>
+                                <span class="dot" onclick="currentSlide(2, event)"></span>
+                                <span class="dot" onclick="currentSlide(3, event)"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">
+                        <img src="../images/arrow-left.png" alt="">
+                    </a>
+                    <a class="next" onclick="plusSlides(1)">
+                        <img src="../images/arrow-right.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- ********** Section quick links (starts here) ********** -->
+            <div class="quick-links-container">
+                <button class="btn btn-quick-item" aria-label="" aria-valuetext="">
+                    <div class="img-text-box">
+                        <img src="../images/product-images/cale-and-wire-img.png" alt="">
+                        <div class="btn-label">
+                            <span class="label-main-text"> Cable & Wire Markers</span>
+                            <span class="lable-sub-text">Shop online for fast service.</span>
+                        </div>
+                    </div>
+                    <span class="arrow-box"><img src="../images/arrow-right.png" alt=""></span>
+                </button>
+
+                <button class="btn btn-quick-item" aria-label="" aria-valuetext="">
+                    <div class="img-text-box">
+                        <img src="../images/product-images/marking-accessory-img.png" alt="">
+                        <div class="btn-label">
+                            <span class="label-main-text"> Marking Accessories</span>
+                            <span class="lable-sub-text">Everything for wire & cable management.</span>
+                        </div>
+                    </div>
+                    <span class="arrow-box"><img src="../images/arrow-right.png" alt=""></span>
+                </button>
+            </div>
+            <!-- ********** Section quick links (starts here) ********** -->
+
+            <div class="container-product-line-up">
+                <div class="section-heading">
+                    <h1>Top product line-up</h1>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-1.png" alt="">
+                        <p class="product-title">Printers & Software</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-2.png" alt="">
+                        <p class="product-title">Cable Management</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-3.png" alt="">
+                        <p class="product-title">Tools</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-4.png" alt="">
+                        <p class="product-title">Steel Markers</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-5.png" alt="">
+                        <p class="product-title">Plates</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-6.png" alt="">
+                        <p class="product-title">Cable Markers</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-7.png" alt="">
+                        <p class="product-title">Wire Markers</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-8.png" alt="">
+                        <p class="product-title">Clip-On Markers</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../images/product-line-up-images/product-image-9.png" alt="">
+                        <p class="product-title">Cable Acccessories</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ********** Section Top Product Line Up (ends here) ********** -->
+
+
+
+
+            <!-- ********** Section Featured products (starts here) ********** -->
+
+            <div class="conatainer-featured-products">
+                <div class="section-heading">
+                    <h1>Featured products</h1>
+                </div>
+
+                <div class="featured-product-container">
+                    <div class="featured-product-card">
+                        <div class="product-main-info-box">
+                            <img src="../images/product-images/product-image-5.png" alt="">
+                            <div class="product-title-box">
+                                <span class="product-title">Closed Profile Single Character</span>
+                                <span class="product-fav-icon">
+                                    <img src="../images/star-icon-light.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="view-product-box">
+                            <span class="">View Product</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-product-card">
+                        <div class="product-main-info-box">
+                            <img src="../images/product-images/product-image-6.png" alt="">
+                            <div class="product-title-box">
+                                <span class="product-title">Oval Profile</span>
+                                <span class="product-fav-icon">
+                                    <img src="../images/star-icon-light.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="view-product-box">
+                            <span class="">View Product</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-product-card">
+                        <div class="product-main-info-box">
+                            <img src="../images/product-images/product-image-7.png" alt="">
+                            <div class="product-title-box">
+                                <span class="product-title">Steel Cable Ties</span>
+                                <span class="product-fav-icon">
+                                    <img src="../images/star-icon-light.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="view-product-box">
+                            <span class="">View Product</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ********** Section Featured products (starts here) ********** -->
+
+
+            <!-- ********** Section Mark Online (starts here) ********** -->
+            <div class="container-mark-online">
+                <div class="mark-online-inner">
+                    <div class="mark-section-imag-box">
+                        <img src="../images/backgrounds/mark-online-banner.png" alt="">
+                    </div>
+                    <div class="mark-section-content-box">
+                        <div class="content-box-inner">
+                            <span class="section-heading">
+                                <p>Mark Online</p>
+                            </span>
+
+                            <span class="section-description-box">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </span>
+
+                            <button class="btn btn-learn-more">
+                                Learn More
+                            </button>
+                        </div>
+
+                        <div class="marking-methods-box">
+                            <span class="section-heading">
+                                <p>Our Marking Methods </p>
+                            </span>
+
+                            <div class="methods-container">
+                                <div class="method-box">
+                                    <span class="method-image">
+                                        <img src="../images/marking-methods-img/method-1.png" alt="">
+                                    </span>
+                                    <span class="method-label">Single Characters</span>
+                                </div>
+
+                                <div class="method-box">
+                                    <span class="method-image">
+                                        <img src="../images/marking-methods-img/method-2.png" alt="">
+                                    </span>
+                                    <span class="method-label">Multi Characters</span>
+                                </div>
+
+                                <div class="method-box">
+                                    <span class="method-image">
+                                        <img src="../images/marking-methods-img/method-3.png" alt="">
+                                    </span>
+                                    <span class="method-label">Do-It-Yourself</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <!-- ********** Section Mark Online (ends here) ********** -->
+
+
+            <!-- ********** Top Solutions (starts here) ********** -->
+            <div class="container-top-solutions">
+                <div class="section-heading">
+                    <p>Top solutions for industry</p>
+
+                </div>
+                <div class="top-solutions-inner">
+                    <div class="solution-item">
+                        <span class="imgae-box">
+                            <img src="../images/Factory.png" alt="">
+                        </span>
+                        <span class="label-box">Industrial & Manufacturing</span>
+                    </div>
+
+                    <div class="solution-item">
+                        <span class="imgae-box">
+                            <img src="../images/Transmission-Tower.png" alt="">
+                        </span>
+                        <span class="label-box">Power Generation</span>
+                    </div>
+
+                    <div class="solution-item">
+                        <span class="imgae-box">
+                            <img src="../images/machine.png" alt="">
+                        </span>
+                        <span class="label-box">Automation</span>
+                    </div>
+
+                    <div class="solution-item">
+                        <span class="imgae-box">
+                            <img src="../images/Tram.png" alt="">
+                        </span>
+                        <span class="label-box">Transportation</span>
+                    </div>
+
+                    <div class="solution-item">
+                        <span class="imgae-box">
+                            <img src="../images/Networking Manager.png" alt="">
+                        </span>
+                        <span class="label-box">Telecommunications & I.T.</span>
+                    </div>
+
+                    <div class="solution-item">
+                        <span class="imgae-box">
+                            <img src="../images/Data-Protection.png" alt="">
+                        </span>
+                        <span class="label-box">Cataloguing & Securing</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ********** Top Solutions (ends here) ********** -->
+
+            <!-- ********** Company Into section (starts here) ********** -->
+            <div class="container-company-intro">
+                <div class="main-image-box">
+                    <img src="../images/backgrounds/company-intro-img.png" alt="">
+                </div>
+                <div class="content-section">
+                    <div class="comapany-intro-box">
+                        <p class="heading">Who we are</p>
+                        <p class="description">We are Partex, a family-owned company with 75 years of experience in
+                            industrial marking systems. Our world-leading solutions enhance safety and boost
+                            productivity for electricians worldwide. Electrification is the future, and we're driving
+                            progress. With care for our customers, each other, and generations to come, we're shaping a
+                            safer and more sustainable electric future.</p>
+                    </div>
+
+                    <div class="comapany-intro-box">
+                        <p class="heading">Core values</p>
+                        <p class="description">Partex is a multigenerational Company with a rich tradition. From the
+                            very beginning, the owners built the brand based on basic human values. For over 75 years,
+                            countless Employees have found that good relationships, mutual trust, and reliable quality -
+                            these are what give the Company and its people strength. We have particularly experienced
+                            this in recent months. Words of support and encouragement from the owners and the Management
+                            Board have allowed us to get through this difficult time in terms of security.Seeing the
+                            importance and meaning of the words QUALITY, LONG-TERM, CLOSENESS - and their real impact on
+                            our life and work - we wish to express them today in our own way, and promote them within
+                            our Organisation, and also among our Trade Partners.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ********** Company Into section (edns here) ********** -->
+
+        </content>
+
+
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="logo"></div>
+                <p>© 2024 My Website</p>
+            </div>
+            <div class="brand-box">We mark the future</div>
+        </footer>
+    </main>
+
+
+    <script src="../js/iconsmenu.js" type="text/javascript"></script>
+    <script src="../js/search.js" type="text/javascript"></script>
+    <script src="../js/megamenu.js" type="text/javascript"></script>
+    <script src="../js/carousel.js" type="text/javascript"></script>
+    <script src="../js/standard-button.js"></script>
+
+
+</body>
+
+</html>

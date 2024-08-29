@@ -1,0 +1,19 @@
+{
+  "template"  : "designSystem",
+  "components": {
+      "header": {
+        "megamenu" :  {
+          "megamenu-panel-content" : {},
+          "megamenu-subpanel" : {}
+        },
+        "search" :    {},
+        "iconsmenu" : {}
+      },
+      "design-system": {
+        "standard-button" : {},
+        "lg-standard-button" : {}
+      },
+      "footer": {}
+    }
+}
+  
