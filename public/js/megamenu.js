@@ -17,7 +17,7 @@
                 if (menu.items[item].submenu) {
                     submenus.push({"item" : item, "label" : menu.items[item].submenu});
                 };
-                menuHtml += `<li onmouseenter="removeActive('.megamenu-panel'); rollOver('MainmenuButton_${item}', 'MegamenuPanel_${item}', 'MegamenuContainer')" id='MainmenuButton_${item}' class='menu item'><a href='${menu.items[item].link}'>` + menu.items[item].label + "</a></li>";
+                menuHtml += `<li onmouseenter="clearMenu('MegamenuContainer');  rollOver('MainmenuButton_${item}', 'MegamenuPanel_${item}', 'MegamenuContainer')"  id='MainmenuButton_${item}' class='menu item'><a href='${menu.items[item].link}'>` + menu.items[item].label + "</a></li>";
                 menuContHtml += `<div id='MegamenuPanel_${item}' class='megamenu-panel void'>{{ megamenu-panel-content }}</div>`;
             };
 
@@ -45,9 +45,8 @@
             let submenuID = 'MegamenuPanel_' + submenus[sub].item;
             submenuContainer[sub] = document.getElementById(submenuID);
             submenuLabel = "{{ " + submenus[sub].label + " }}";
-            var id = 'id*="MegamenuPanel_"';
-            var str = `'div[${id}] .active'`;
-            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive(${str})">${submenuLabel}</div>`;
+            var str = '#MegamenuContainer.active .active';
+            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive('${str}'); console.log('Megamenu - mouseleave');">${submenuLabel}</div>`;
             // add submenu containers
             submenuContainer[sub].innerHTML = submenuContHtml;
         }

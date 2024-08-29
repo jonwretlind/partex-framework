@@ -21,6 +21,7 @@
 
   //misc
   --grid-border:   1px dotted rgba(255, 0, 0, 0.2);
+  --shadow:        0 0 8px rgba(0,0,0,.3);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
@@ -112,6 +113,25 @@ body {
     max-width: var(--unit);
     height: var(--unit);
     background-color: var(--partex-yellow);
+  }
+
+  //scrollbars
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #707070 #ffffff;
+    border-radius: 25px;
+    border: 5px solid #d1d1d1;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #707070;
+    border-radius: 25px;
+    border: 1px solid #d1d1d1;
   }
 
   //layout

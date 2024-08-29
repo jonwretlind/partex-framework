@@ -76,42 +76,48 @@
                   "imageUrl": "../images/products/image29.jpeg",
                   "link": ""                                     
             }
-        ]},
+        ]
+      },
         { "Cable Markers" : [
             {
                 "productName": "",
                 "imageUrl": "",
                 "link": ""                                     
             }
-        ]},
+        ]      
+      },
         { "Steel Markers" : [
             {
                 "productName": "",
                 "imageUrl": "",
                 "link": ""                                     
             }
-        ]},
+        ]
+      },
         { "Component Markers" : [
             {
                 "productName": "",
                 "imageUrl": "",
                 "link": ""                                     
             }
-        ]},
+        ]
+      },
         { "Clip-On Markers" : [
             {
                 "productName": "",
                 "imageUrl": "",
                 "link": ""                                     
             }
-        ]},
+        ]
+      },
         { "Plates" : [
             {
                 "productName": "",
                 "imageUrl": "",
                 "link": ""                                     
             }
-        ]}
+        ]
+      }
     ],
     "Accessories": [
 

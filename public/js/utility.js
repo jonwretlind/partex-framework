@@ -30,6 +30,36 @@ function removeActive(ele) {
     const select = document.querySelector(ele);
     if (select) select.classList.remove("active");
 }
+// clears all menus
+function clearMenu(id) {
+    const menu = document.getElementById(id);
+    if (menu) { 
+        menu.classList.remove('active');
+        var children = menu.children;
+        for (var child of children) {
+            child.classList.remove('active');
+        };
+    }
+}
+
+// get URL Parameter
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+//append a URL Parameter
+function appendParameter(urlString, param, str) {
+    console.log("current URL with Params: ", urlString);
+    let u = new URL(urlString);
+    let params = new URLSearchParams(u.search);
+    params.append(param, str);
+    return params.toString();
+}
 
 // function to wait for a specific element to be loaded before executing 
 // another javascript function

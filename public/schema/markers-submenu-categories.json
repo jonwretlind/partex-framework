@@ -3,32 +3,38 @@
         {
             "label": "Wire Markers",
             "imageUrl": "../images/image_1.png",
-            "link" : "#"
+            "subcategory" : "wire-markers",
+            "className" : "wire-markers"
         },
         {
             "label": "Cable Markers",
             "imageUrl": "../images/image_7.png",
-            "link" : "#"
+            "subcategory" : "cable-markers",
+            "className" : "cable-markers"
         },
         {
             "label": "Steel Markers",
             "imageUrl": "../images/image_8.png",
-            "link" : "#"
+            "subcategory" : "steel-markers",
+            "className" : "steel-markers"
         },
         {
             "label": "Clip-On Markers",
             "imageUrl": "../images/image_5.png",
-            "link" : "#"
+            "subcategory" : "clip-on-markers",
+            "className" : "clip-on-markers"
         },
         {
             "label": "Component Markers",
             "imageUrl": "../images/image_4.png",
-            "link" : "#"
+            "subcategory" : "component-markers",
+            "className" : "component-markers"
         },
         {
             "label": "Plates",
             "imageUrl": "../images/image_6.png",
-            "link" : "#"
+            "subcategory" : "plates",
+            "className" : "plates"
         }
     ]
 } 

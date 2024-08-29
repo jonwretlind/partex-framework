@@ -11,7 +11,13 @@ function markersCategoriesMenu() {
         console.log("categoryMenu: ", categoryMenu);
         async function addHTML() {
             for (item in menu.items) {
-                menuHtml += `<li class='submenu-categories-item' style='background-image: url("${menu.items[item].imageUrl}");><a href='${menu.items[item].link}'><div class="label">${menu.items[item].label}</div></a></li>`;
+                var activeFlag;
+                if (item == 0) { activeFlag = "active"} else { activeFlag = ""}
+                //append the parameter to the end of the url
+                let UrlParam = appendParameter(window.location.href, 'subcategory', menu.items[item].subcategory);
+                //set the html for the submenu category button
+                menuHtml += `<li class='submenu-categories-item ${menu.items[item].className} ${activeFlag}' style='background-image: url("${menu.items[item].imageUrl}");'><a href='${UrlParam}'><div class="label">${menu.items[item].label}</div></a></li>`;
+                console.log("link: ", menu.items[item].link);
             };
 
             //add the components to the page

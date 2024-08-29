@@ -1,6 +1,7 @@
 #Megamenu {
     width: calc(var(--grid-unit) * 6);
 }
+#Megamenu, #MegamenuContainer,
 #Megamenu *,
 #MegamenuContainer * {
     transition: all .25s ease-in;
@@ -33,15 +34,13 @@
     z-index: 100;
     overflow: hidden;
 }
-#MegamenuContainer.active {
-    box-shadow: 0 0 15px rgba(0,0,0,.3);
-}
 
 .megamenu-panel {
     display: none;
     min-height: fit-content;
     background-color: var(--beige);
     padding: var(--unit) var(--half-grid-unit);
+    box-shadow: var(--shadow);
 }
 
 .megamenu-panel.active:not(.void) {
