@@ -1,0 +1,24 @@
+ /* Styles for small icons in header area */ 
+ #IconsMenu {
+    width: calc(var(--grid-unit) * 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#IconsMenu .icon-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    padding-right: var(--unit);
+}
+#IconsMenu .icon {
+    width: var(--unit);
+} 
+#IconsMenu .sm-brand-box {
+    margin: 0 0 0 auto;
+}

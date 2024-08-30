@@ -150,3 +150,36 @@
 .slide-1 .lg-standard-btn .btn-label span::after { content: "Cable & Wire Markers"; }
 .slide-2 .lg-standard-btn .btn-label span::after { content: "Visit Mark Online"; }
 .slide-3 .lg-standard-btn .btn-label span::after { content: "Sign Up Today"; }
+
+/* MOBILE STYLES */
+@media screen and (max-width: 1024px) {
+    div#Hero {
+        height: 30vh;
+    }
+    .carousel-container .slideshow-container {
+        height: inherit;
+    }
+    .carousel-container .mySlides {
+        overflow: hidden;
+        height: inherit;
+    }
+    .carousel-container .mySlides .image-container {
+        width: 106vh;
+        left: -34%;
+        position: relative;
+    }
+    .carousel-container .mySlides .image-container > img {
+        object-fit: cover;
+    }
+}/* end 1024px */
+@media screen and (max-width: 768px) {
+    .slide-content-container {
+        bottom: 21%;
+    }
+    .content-box h1,
+    .content-box h3 {
+        color: white !important;
+        text-shadow: var(--shadow);
+    }
+}/* end 768px */
+

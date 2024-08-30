@@ -21,10 +21,15 @@
 #Megamenu li.menu.item > a {
     text-decoration: none;
     color: var(--graphite);
+    font-weight: var(--medium);
 }
 
 #Megamenu li.menu.item > a:hover {
     font-weight: var(--bold);
+}
+
+#Megamenu .sm-icon > img {
+    height: 0.75rem;
 }
 
 #MegamenuContainer {

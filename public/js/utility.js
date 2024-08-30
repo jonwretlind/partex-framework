@@ -85,28 +85,19 @@ function waitForElement(selector) {
 }
 
 // Timer functions
-// http://stackoverflow.com/questions/7279567/how-do-i-pause-a-window-setinterval-in-javascript
+// timer with pause function
 class Timer{
-    Recurring(callback, delay) {
-        var timerId, start, remaining = delay;
+    constructor(callback, delay){
+        let myTimer;
+        this.resume = function() {
+            myTimer = window.setInterval(function() {
+                callback();
+            }, delay);
+        }
 
         this.pause = function() {
-            window.clearTimeout(timerId);
-            remaining -= new Date() - start;
+            window.clearInterval(myTimer);
         };
-    
-        var resume = function() {
-            start = new Date();
-            timerId = window.setTimeout(function() {
-                remaining = delay;
-                resume();
-                callback();
-            }, remaining);
-        };
-    
-        this.resume = resume;
-    
-        this.resume();
     }
 }
 

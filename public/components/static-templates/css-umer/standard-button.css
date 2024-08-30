@@ -1,0 +1,74 @@
+.standard-btn,
+.lg-standard-btn {
+  background-color: var(--graphite);
+  color: white;
+  border: none;
+  padding: 0 var(--unit) 0 0;
+  margin: calc(var(--unit) / 2) 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  max-width: calc(var(--grid-unit) * 3);
+}
+
+.lg-standard-btn {
+  transform: scale(1.15);
+  transform-origin: top left;
+}
+
+.standard-btn .btn-label,
+.lg-standard-btn .btn-label {
+  margin: calc(var(--unit) / 4);
+  position: absolute;
+  z-index: 10;
+  margin-left: calc(var(--unit) + (var(--unit) / 1.5));
+}
+.lg-standard-btn .btn-label {
+  padding-top: 1px; /* adjust for scaling */
+}
+
+.standard-btn .sm-brand-box,
+.lg-standard-btn .sm-brand-box {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  max-width: calc(var(--unit) * 1.3);
+  height: calc(var(--unit) * 1.3);
+  margin-right: calc(var(--unit) / 4);
+}
+
+.standard-btn:hover,
+.lg-standard-btn:hover {
+  background-color: var(--beige);
+  color: var(--partex-black);
+  box-shadow: 2px 2px 3px var(--light-gray);
+}
+
+.standard-btn:hover .sm-brand-box,
+.lg-standard-btn:hover .sm-brand-box {
+  animation: wipe 0.25s ease-in-out;
+  animation-iteration-count: 1;
+  max-width: calc(var(--unit) * 1.3);
+  left: 100%;
+}
+
+@keyframes wipe {
+  0% {
+    max-width: calc(var(--unit) * 1.3);
+    margin-right: calc(var(--unit) / 4);
+    left: 0px;
+    opacity: 1;
+  }
+  50% {
+    max-width: 100%;
+    opacity: 0.5;
+  }
+  100% {
+    max-width: calc(var(--unit) * 1.3);
+    left: unset;
+    right: 0px;
+    opacity: 1;
+  }
+}

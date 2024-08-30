@@ -19,6 +19,9 @@
 #IconsMenu .icon {
     width: var(--unit);
 } 
+#IconsMenu .icon > img {
+    width: 1.5rem;
+} 
 #IconsMenu .sm-brand-box {
     margin: 0 0 0 auto;
 }

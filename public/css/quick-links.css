@@ -1,0 +1,104 @@
+/* quick-links css*/
+
+.quick-links-container {
+    display: flex;
+    gap: var(--unit);
+    margin: var(--unit) 0 var(--unit) 0;
+
+}
+
+.quick-links-container>.btn-quick-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 6px 4px 0px rgb(0 0 0 / 0.2);
+
+    flex-basis: 50%;
+    border: unset;
+    cursor: pointer;
+    padding: unset;
+    min-height: var(--grid-unit);
+
+    background-color: var(--beige);
+    transition: .2s ease-out;
+}
+
+@keyframes yellowFade {
+    0%       { background-color: var(--beige); }
+    50%      { background-color: var(--partex-yellow); }
+    100%     { background-color: var(--graphite); }
+}
+
+
+.quick-links-container>.btn-quick-item:hover {
+    background-color: var(--graphite);
+    background-position: left;
+    border-right: 0.6rem solid var(--partex-yellow);
+    animation: yellowFade .25s ease-out;
+}
+
+.quick-links-container>.btn-quick-item:hover .arrow-box {
+    display: none;
+}
+
+.quick-links-container>.btn-quick-item:hover .btn-label>span {
+    color: #fff !important;
+}
+
+.quick-links-container>.btn-quick-item:hover .btn-label>.label-main-text .btn-label>.lable-sub-text {
+    color: #fff !important
+}
+
+
+.quick-links-container>.btn-quick-item>.img-text-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    height: var(--grid-unit);
+}
+.quick-links-container>.btn-quick-item>.img-text-box > img {
+    height: inherit;
+}
+
+.quick-links-container>.btn-quick-item>.img-text-box>img {
+    padding: 0rem 0.6rem 0rem 0rem;
+    background-color: var(--graphite);
+}
+
+.quick-links-container>.btn-quick-item>.img-text-box>.btn-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.quick-links-container>.btn-quick-item>.img-text-box>.btn-label>.label-main-text {
+    font-weight: var(--medium);
+    font-size: 1.625rem;
+    color: var(--partex-black);
+}
+
+.quick-links-container>.btn-quick-item>.img-text-box>.btn-label>.label-sub-text {
+    font-weight: var(--light);
+    font-size: 1.188rem;
+    color: var(--graphite);
+}
+
+.quick-links-container>.btn-quick-item>.arrow-box {
+    right: 16px;
+    position: relative;
+    width: 1.2rem;
+}
+
+.quick-links-container>.btn-quick-item>.arrow-box>img {
+    width: 100%;
+    height: auto;
+}
+
+/* MOBILE OVERRIDES */
+@media screen and (max-width: 768px) {
+    .quick-links-container {
+        flex-direction: column;
+    }
+}

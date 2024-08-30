@@ -7,7 +7,7 @@ const timer = new Timer( function() {
     slideIndex++;
     showSlides(slideIndex);
 }, 5000);
-timer.Recurring.resume(); // start timer
+timer.resume(); // start timer
 
 // These functions need to have global scope
 // Next/previous controls

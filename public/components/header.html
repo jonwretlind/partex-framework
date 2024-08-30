@@ -1,7 +1,18 @@
 <header>
-  <a href="./home"><div class="logo"></div></a>
-  <div>{{ megamenu }}</div>
-  <div>{{ search }}</div>
-  <div>{{ iconsmenu }}</div>
+  <div class="desktop-header">
+    <a href="./home"><div class="logo"></div></a>
+    <div>{{ megamenu }}</div>
+    <div>{{ search }}</div>
+    <div>{{ iconsmenu }}</div>
+  </div>
+  <div class="mobile-header">
+    <div class="top">
+      <a href="./home"><div class="logo"></div></a>
+      {{ mobile-top-menu }}
+    </div>
+    <div class="bottom">
+      {{ mobile-bottom-menu }}
+    </div>
+  </div>
 </header>
   

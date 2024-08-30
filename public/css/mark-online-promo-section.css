@@ -1,0 +1,101 @@
+.container-mark-online {
+    background-color: var(--light-beige);
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-top: var(--half-grid-unit);
+    left: 50%;
+}
+
+
+.container-mark-online>.mark-online-inner {
+    padding: 4rem var(--grid-unit);
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 4.2rem;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-imag-box {
+    flex-basis: 35%;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-imag-box>img {
+    width: 100%;
+    height: auto;
+}
+
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box {
+    flex-basis: 55%;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.section-heading>p,
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.section-heading>p {
+    margin: unset;
+    font-weight: var(--medium);
+    font-size: 1.5rem;
+    color: var(--partex-black);
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.section-description-box>p {
+    margin: unset;
+    font-weight: var(--light);
+    font-size: 1rem;
+    color: var(--partex-black);
+    margin-bottom: 0.5rem;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.btn-learn-more {
+    width: fit-content;
+    padding: 0.5rem 3.3rem;
+    font-weight: var(--medium);
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--partex-black);
+    color: #F0F0F0;
+    transition: 0.3s;
+    border: 1px solid var(--partex-black);
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.btn-learn-more:hover {
+    color: var(--partex-black);
+    background-color: #F0F0F0;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box {
+    margin-top: 1.125rem;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.125rem;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container>.method-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    /* flex-basis: 16%; */
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container>.method-box>.method-image>img {
+    width: 85%;
+    height: 9.5rem;
+}
+
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container>.method-box>.method-label {
+    font-weight: var(--medium);
+    font-size: 1.125rem;
+    color: var(--partex-black);
+    text-align: center;
+    width: 6rem;
+}

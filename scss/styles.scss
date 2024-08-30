@@ -3,6 +3,7 @@
   --partex-yellow: rgba(255, 210, 45, 1);
   --graphite:      rgba(88, 92, 96, 1);
   --beige:         rgba(234, 229, 218, 1);
+  --light-beige:   rgba(234, 229, 218, .5);
   --partex-black:  rgba(45, 45, 45, 1);
   --gray:          rgba(128, 128, 128, 1);
   --light-gray:    rgba(200, 200, 200 ,1);
@@ -22,6 +23,7 @@
   //misc
   --grid-border:   1px dotted rgba(255, 0, 0, 0.2);
   --shadow:        0 0 8px rgba(0,0,0,.3);
+  --light-border:  1px solid var(--light-gray);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
@@ -53,6 +55,9 @@ body {
 
   h1, h2, h3, h4 {
     font-weight: var(--medium);
+    &.title {
+      text-align: center;
+    }
   }
   h1 {
     font-size: 2rem;
@@ -141,12 +146,15 @@ body {
     padding: var(--unit) var(--grid-unit);
     width: calc(100% - (var(--grid-unit * 2)));
     max-width: var(--page-width);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     @media screen and (max-width: 1600px) {
       & {     padding: var(--unit) var(--half-grid-unit);   }
     }
+    .desktop-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .mobile-header { display: none; } // hide the mobile header if desktop version
      
     .logo {
       width: 12.55556rem;
@@ -177,6 +185,15 @@ body {
     }
   }
   
+  section {
+    display: flex;
+    margin: var(--unit) auto;
+    flex-direction: column;
+    .section-heading {
+      margin: var(--unit) auto
+    }
+  }
+
   footer {
     display: flex;
     flex-direction: row;
@@ -229,3 +246,105 @@ body {
       }
     }
   }
+
+
+// ============================== //
+// =========  MOBILE ============ //
+// ============================== //
+
+@media screen and (max-width: 1024px) {
+  //variable overrides
+  :root {
+    // colors
+    --soft-gray:   rgb(245, 243, 237);
+    // units
+    --unit:           calc(100vw * .03125); // 1/32 of the viewport
+    --half-grid-unit: calc(var(--unit) * 2); // 1/32
+    --grid-unit:      calc(var(--unit) * 4); // 1/16
+    --page-width:     calc(var(--grid-unit) * 8);
+    --content-width:  calc(var(--grid-unit) * 6);
+  }
+  html {
+    font-size: 1.5vw;
+  }
+  header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    .mobile-header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      & > div {
+        position: absolute;
+        background-color: var(--soft-gray);
+        box-shadow: var(--shadow);
+        padding: 0 var(--half-grid-unit);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(var(--page-width) - var(--grid-unit));
+        height: var(--half-grid-unit);
+      }
+      .top {
+        top: 0px;
+        .mobile-top-menu {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: var(--unit);
+        }
+      }
+      .bottom {
+        bottom: -100vh;
+        .mobile-bottom-menu {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 20px;
+          .menu-containers {
+            display: flex;
+            flex-direction: row;
+            & > div {
+              width: 50%;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            .col2 {
+              justify-content: flex-end;
+              gap: var(--unit);
+            }
+          }
+          .search-btn {
+            margin-top: -27px;
+            margin-bottom: -44px;
+          }
+        }
+      }
+    }
+    .desktop-header { display: none; } // hide the desktop header if desktop version
+  }//end header
+  content {
+      padding: var(--grid-unit) var(--half-grid-unit);
+  }//end content
+}//end 980px
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 1.8vw;
+  }
+  header {
+    .mobile-header {
+      & > div {
+        height: calc(var(--grid-unit) - var(--unit));
+      }
+    }
+  }//end header
+}// end 768px
