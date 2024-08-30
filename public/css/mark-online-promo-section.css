@@ -17,7 +17,7 @@
 }
 
 .container-mark-online>.mark-online-inner>.mark-section-imag-box {
-    flex-basis: 35%;
+    flex-basis: calc(var(--grid-unit) * 5);
 }
 
 .container-mark-online>.mark-online-inner>.mark-section-imag-box>img {
@@ -47,49 +47,34 @@
 .container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.section-description-box>p {
     margin: unset;
     font-weight: var(--light);
-    font-size: 1rem;
     color: var(--partex-black);
     margin-bottom: 0.5rem;
 }
 
-.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.btn-learn-more {
-    width: fit-content;
-    padding: 0.5rem 3.3rem;
-    font-weight: var(--medium);
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: var(--partex-black);
-    color: #F0F0F0;
-    transition: 0.3s;
-    border: 1px solid var(--partex-black);
-}
-
-.container-mark-online>.mark-online-inner>.mark-section-content-box>.content-box-inner>.btn-learn-more:hover {
-    color: var(--partex-black);
-    background-color: #F0F0F0;
-}
-
 .container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box {
-    margin-top: 1.125rem;
+    margin-top: 1.3rem;
 }
 
 .container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container {
     display: flex;
     gap: 1.5rem;
-    margin-top: 1.125rem;
+    margin-top: 1.3rem;
 }
 
 .container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container>.method-box {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--unit);
     align-items: center;
-    /* flex-basis: 16%; */
+    flex-basis: var(--unit);
+}
+.container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container .method-image {
+    box-shadow: var(--shadow);
 }
 
 .container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container>.method-box>.method-image>img {
-    width: 85%;
-    height: 9.5rem;
+    width: 100%;
+    height: auto;
 }
 
 .container-mark-online>.mark-online-inner>.mark-section-content-box>.marking-methods-box>.methods-container>.method-box>.method-label {

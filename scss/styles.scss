@@ -24,6 +24,7 @@
   --grid-border:   1px dotted rgba(255, 0, 0, 0.2);
   --shadow:        0 0 8px rgba(0,0,0,.3);
   --light-border:  1px solid var(--light-gray);
+  --yellowFade:    yellowFade .25s ease-out; //for btn animations
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
@@ -49,7 +50,7 @@ body {
   p, a, ol, ul, li, span {
     font-family: var(--base-font);
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--partex-black);
   }
 
@@ -246,6 +247,13 @@ body {
       }
     }
   }
+
+// ANIMATIONS
+@keyframes yellowFade {
+  0%       { background-color: var(--beige); }
+  50%      { background-color: var(--partex-yellow); }
+  100%     { background-color: var(--graphite); }
+}
 
 
 // ============================== //

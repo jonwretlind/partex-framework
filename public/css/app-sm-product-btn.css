@@ -1,0 +1,27 @@
+.featured-product-card .view-product-box,
+.product-card .view-product-box {
+    background-color: var(--graphite);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.featured-product-card .view-product-box:hover,
+.product-card .view-product-box:hover {
+    background-color: var(--partex-black);
+    animation: var(--yellowFade);
+}
+
+.featured-product-card .view-product-box span,
+.product-card .view-product-box span {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: calc(var(--unit) / 2) 0;
+    line-height: 1.5rem;
+    display: block;
+}
+/* CSS HACK TO ADD LABEL TO BUTTON */
+.featured-product-card .view-product-box span::after,
+.product-card .view-product-box span::after {
+    content: "View Product"
+}

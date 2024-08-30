@@ -24,13 +24,6 @@
     transition: .2s ease-out;
 }
 
-@keyframes yellowFade {
-    0%       { background-color: var(--beige); }
-    50%      { background-color: var(--partex-yellow); }
-    100%     { background-color: var(--graphite); }
-}
-
-
 .quick-links-container>.btn-quick-item:hover {
     background-color: var(--graphite);
     background-position: left;

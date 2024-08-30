@@ -1,0 +1,14 @@
+.btn-learn-more {
+    width: fit-content;
+    padding: 0.5rem 3.3rem;
+    font-weight: var(--light);
+    cursor: pointer;
+    background-color: var(--graphite);
+    color: white;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+.btn-learn-more:hover {
+    background-color: var(--partex-black);
+    animation: var(--yellowFade);
+}
