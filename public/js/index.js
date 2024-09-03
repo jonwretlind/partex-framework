@@ -1,6 +1,6 @@
 (function () {
     //DEBUG MODE
-    const debug = false;
+    const debug = true;
     // show debugging grid
     var drawDebugGrid = (units) => {
         if (debug) {
@@ -12,7 +12,7 @@
             }
             Grid.innerHTML = html;
         
-            console.log("Debug Mode");
+            console.log("Debug Mode ON");
             for (const container of containersArr) {
                 container.classList.add('devmode'); 
             }
@@ -30,6 +30,7 @@
     const body = document.getElementById('AppBody');
     var setMobileClasses = () => {
         let Wd = body.offsetWidth;
+        console.log(" ----- setMobileClasses() ")
         console.log("Body Width: ", Wd);
         if (Wd <= mobileBreakpoint) {
             body.classList.add('mobile'); // add mobile class to largest breakpoint

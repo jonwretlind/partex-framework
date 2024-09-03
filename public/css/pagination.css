@@ -50,3 +50,22 @@
   cursor: pointer;
   color: var(--graphite);
 }
+
+.container-flex .pagination-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.pagination-container > p {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.container-flex .pagination-container>.navigate-top-text {
+  color: var(--graphite);
+  font-size: 0.875rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}

@@ -3,80 +3,80 @@
         "Category" : {
             "Markers" : {
                 "Wire" : [
-                        {
+                    {
                             "productName": "PA - Closed Profile Single Character Marker",
                             "imageUrl": "../images/products/image14.jpeg",
-                            "link": ""                                     
+                            "uid": "1000"                                     
                     },
                     {
                             "productName": "PY - Markers for Wires <2mm Diameter",
                             "imageUrl": "../images/products/image15.jpeg",
-                            "link": ""                                     
+                            "uid": "1001"                                   
                     },
                     {
                             "productName": "PA+/PC/PO/PY - Multi-Character Marking",
                             "imageUrl": "../images/products/image16.jpeg",
-                            "link": ""                                     
+                            "uid": "1002"                                   
                     },
                     {
                             "productName": "PT+ - Marker Sleeve with Label Pocket",
                             "imageUrl": "../images/products/image17.jpeg",
-                            "link": ""                                     
+                            "uid": "1003"                                   
                     },
                     {
                             "productName": "PC -Single Character Open Markers",
                             "imageUrl": "../images/products/image18.jpeg",
-                            "link": ""                                     
+                            "uid": "1004"                                   
                     },
                     {
                             "productName": "PHZF - Continuous Flat Heat Shrink",
                             "imageUrl": "../images/products/image19.jpeg",
-                            "link": ""                                     
+                            "uid": "1005"                                   
                     },
                     {
                             "productName": "PT+ - PA Type Sleeve",
                             "imageUrl": "../images/products/image20.jpeg",
-                            "link": ""                                     
+                            "uid": "1006"                                   
                     },
                     {
                             "productName": "PTC - Multi-Character Marking",
                             "imageUrl": "../images/products/image21.jpeg",
-                            "link": ""                                     
+                            "uid": "1007"                                   
                     },
                     {
                             "productName": "PTZ+ - Multi-Character Marking, Halogen Free",
                             "imageUrl": "../images/products/image22.jpeg",
-                            "link": ""                                     
+                            "uid": "1008"                                   
                     },
                     {
                             "productName": "PHZ - Continuous Heat Shrink",
                             "imageUrl": "../images/products/image23.jpeg",
-                            "link": ""                                     
+                            "uid": "1009"                                   
                     },
                     {
                             "productName": "PO - Oval Profile",
                             "imageUrl": "../images/products/image25.jpeg",
-                            "link": ""                                     
+                            "uid": "10010"                                   
                     },
                     {
                             "productName": "PK+ - Single Character Markers",
                             "imageUrl": "../images/products/image26.jpeg",
-                            "link": ""                                     
+                            "uid": "10011"                                   
                     },
                     {
                             "productName": "MG - Ladder Style Heat Shrink, Military Grade",
                             "imageUrl": "../images/products/image27.jpeg",
-                            "link": ""                                     
+                            "uid": "10012"                                   
                     },
                     {
                             "productName": "HZ - Halogen Free Heat Shrink Markers",
                             "imageUrl": "../images/products/image28.jpeg",
-                            "link": ""                                     
+                            "uid": "10013"                                   
                     },
                     {
                             "productName": "PCT - Open Wire Marker",
                             "imageUrl": "../images/products/image29.jpeg",
-                            "link": ""                                     
+                            "uid": "10014"                                   
                     }
                     ]
                 },
@@ -84,42 +84,42 @@
                     {
                             "productName": "PA/PO/PKS/PPQ - Multi-Character Cable Markers",
                             "imageUrl": "../images/products/image31.jpeg",
-                            "link": ""                                     
+                            "uid": "10015"                                   
                     },
                     {
                             "productName": "PO/POZ - Oval Profile Multi-Character Cable Markers",
                             "imageUrl": "../images/products/image24.jpeg",
-                            "link": ""                                     
+                            "uid": "10016"                                   
                     },
                     {
                             "productName": "HZ - Halogen Free Heat Shrink Cable Markers",
                             "imageUrl": "../images/products/image28.jpeg",
-                            "link": ""                                     
+                            "uid": "10017"                                   
                     },
                     {
                             "productName": "MG - Military Grade Cable Markers",
                             "imageUrl": "../images/products/image34.jpeg",
-                            "link": ""                                     
+                            "uid": "10018"                                   
                     },
                     {
                             "productName": "PTM - Transparent Sleeve  Cable Markers",
                             "imageUrl": "../images/products/image37.jpeg",
-                            "link": ""                                     
+                            "uid": "10019"                                   
                     },
                     {
                             "productName": "PM - Large Transparent Sleeve Cable Markers",
                             "imageUrl": "../images/products/image38.jpeg",
-                            "link": ""                                     
+                            "uid": "10020"                                   
                     },
                     {
                             "productName": "PROSLEEVE CMZ/CMM/CMD/CML/CMT - ProSleeve Ladder Format Cable Markers",
                             "imageUrl": "../images/products/image39.jpeg",
-                            "link": ""                                     
+                            "uid": "10021"                                   
                     },
                     {
                             "productName": "PROSLEEVE SG/MS/HG/NF/EF/ET - ProSleeve Heat Shrink Tubing Cable Markers",
                             "imageUrl": "../images/products/image25.jpeg",
-                            "link": ""                                     
+                            "uid": "10022"                                   
                     }
                     ],
                 "Steel" : {

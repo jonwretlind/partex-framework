@@ -43,6 +43,21 @@ function clearMenu(id) {
 }
 
 // get URL Parameter
+
+// global values
+    // Get Page Parameters
+    const rootURL = "http://localhost:3000/"; // global
+    let baseURL, pageURL, pageParams; // globals
+
+    function getPageURL() {
+     baseURL = window.location.href;
+     pageURL = new URL(baseURL); 
+     pageParams = pageURL.searchParams;
+     return baseURL;
+    }
+
+    // URL parameter functions
+    // Get Parameter
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -52,13 +67,15 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-//append a URL Parameter
+    //append a URL Parameter
 function appendParameter(urlString, param, str) {
-    console.log("current URL with Params: ", urlString);
+    console.log("URL with Params: ", urlString);
     let u = new URL(urlString);
     let params = new URLSearchParams(u.search);
     params.append(param, str);
-    return params.toString();
+    let newURL = decodeURIComponent(urlString + "?" + params.toString());
+    console.log(" --> new URL with params: ", newURL);
+    return newURL;
 }
 
 // function to wait for a specific element to be loaded before executing 
