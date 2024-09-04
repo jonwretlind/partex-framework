@@ -1,0 +1,4 @@
+.container-product-page {
+    display: flex;
+    gap: var(--half-grid-unit);
+}

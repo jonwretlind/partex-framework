@@ -1,0 +1,27 @@
+.related-products-section {
+    margin-top: 5.5rem;
+}
+
+.related-products-section>.section-heading {
+    text-align: center;
+}
+
+.related-products-section>.section-heading>p {
+    font-weight: var(--medium);
+    font-size: 2rem;
+    color: var(--graphite);
+}
+
+.related-products-section>.related-products-container {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 4rem; */
+}
+
+.related-products-section>.related-products-container>.product-card-box {
+    flex-basis: 22%;
+}
+
+.related-products-section>.related-products-container>.product-card-box>.product-main-info-box>img {
+    width: 85%;
+}
