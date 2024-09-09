@@ -1,0 +1,10 @@
+.product-options-container {
+    margin: 1.25rem 0rem 0rem 0rem;
+}
+
+.product-options-container>.section-heading-box>.title {
+    font-weight: var(--medium);
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0rem 0rem 1.2rem 0rem
+}

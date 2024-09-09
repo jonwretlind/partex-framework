@@ -1,0 +1,61 @@
+
+.product-characteristics-box {
+    border: 1px solid var(--beige);
+    margin: 3.75rem 0rem 0rem 0rem;
+    border-radius: 5px;
+}
+
+.product-characteristics-box>.box-header-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.09rem;
+}
+
+.product-characteristics-box>.box-header-row>.tab-item {
+    color: #fff;
+    font-weight: var(--light);
+    font-size: 0.875rem;
+    background-color: var(--graphite);
+    flex-basis: 18%;
+    text-align: center;
+    padding: 0.4rem 0rem;
+    line-height: 1.2rem;
+    cursor: pointer;
+}
+
+.product-characteristics-box>.box-header-row>.tab-item.active {
+    color: var(--graphite);
+    font-weight: var(--medium);
+    font-size: 1.125rem;
+    background-color: var(--warm-grey);
+}
+
+.product-characteristics-box>.box-body {
+    padding: 0rem 1.83rem !important;
+    margin: 2rem 0rem 4.125rem 0rem;
+}
+
+.product-characteristics-box>.box-body>.box-body-item>.section-heading {
+    font-weight: var(--medium);
+    font-size: 1.625rem;
+    color: var(--partex-black);
+}
+
+.product-characteristics-box>.box-body>.box-body-item>.characteristics-list {
+    list-style: square;
+    padding-left: 1.5rem;
+}
+
+.product-characteristics-box>.box-body>.box-body-item>.characteristics-list>.list-item::marker {
+    color: var(--partex-yellow);
+}
+
+.product-characteristics-box>.box-body>.box-body-item>.characteristics-list>.list-item {
+    font-weight: var(--light);
+    font-size: 1.125rem;
+    color: var(--partex-black);
+}
+
+.product-characteristics-box>.box-body>.box-body-item>.characteristics-list>.list-item:not(:last-child) {
+    line-height: 1.5rem;
+}

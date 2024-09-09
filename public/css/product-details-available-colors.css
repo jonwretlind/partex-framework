@@ -1,0 +1,55 @@
+
+
+.product-color-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.875rem;
+
+}
+
+.product-color-options-container>.color-options-label {
+    font-weight: var(--medium);
+    font-size: 0.875rem;
+    color: black;
+}
+
+.product-color-options-container>.color-options {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.product-color-options-container>.color-options>.color-item {
+    width: 2.375rem;
+    height: 2.375rem;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.product-color-options-container>.color-options>span:nth-child(1) {
+    background-color: #FFF500;
+}
+
+.product-color-options-container>.color-options>span:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.product-color-options-container>.color-options>span:nth-child(3) {
+    background-color: #FE0000;
+}
+
+.product-color-options-container>.color-options>span:nth-child(4) {
+    background-color: #751DE7;
+}
+
+.product-color-options-container>.color-options>span:nth-child(5) {
+    background-color: #1D92E7;
+}
+
+.product-color-options-container>.color-options>span:nth-child(6) {
+    background-color: #000000;
+}
+
+.product-color-options-container>.color-options>span:nth-child(7) {
+    background-color: #969696;
+}
