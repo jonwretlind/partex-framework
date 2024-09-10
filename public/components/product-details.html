@@ -2,9 +2,7 @@
     <div class="product-heading-box">
         <span class="product-name">PO</span>
         <span class="product-postfix">Oval Profile</span>
-        <span class="product-fav-icon">
-            <img src="../../images/star-icon.png">
-        </span>
+        {{ app-add-favorite }}
     </div>
 
     <div class="product-main-description-box">
@@ -18,45 +16,12 @@
     {{ product-details-available-colors }}
 
     <div class="product-purchase-container">
-        <div class="quantity-box">
-            <span class="label">Quantity</span>
-            <div class="quantity-input-box">
-                <input id="productQuantityControl" type="text" readonly="" value="1">
-                <div class="quantity-adjust-control">
-                    <span id="btnQuantityDown" onclick="incrementProductQuantity()">
-                        <img src="../../images/arrow-up.png" alt="">
-                    </span>
-                    <span id="btnQuantityUp" onclick="decrementProductQuantity()">
-                        <img src="../../images/arrow-down-dark.png" alt="">
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="size-box">
-            <span class="label">Size</span>
-            <select name="" id="">
-                <option value="">196.85 Ft. Reel</option>
-                <option value="">200.22 Ft. Reel</option>
-                <option value="">213.43 Ft. Reel</option>
-                <option value="">245.55 Ft. Reel</option>
-            </select>
-        </div>
-        <div class="price-box">
-            <span class="label">Price</span>
-            <span class="pricing"><sup>$</sup>159.32</span>
-        </div>
+        {{ app-quantity-box }}
+        {{ app-option-dropdown }}
+        {{ app-price }}
         <div class="add-to-cart-box">
-            <span class="wishlist-icon-box">
-                <a href="#">
-                    <img src="../../images/heart-icon.png" alt="">
-                </a>
-            </span>
-
-            <button class="standard-btn" aria-label="" aria-valuetext="">
-                <div class="sm-brand-box"></div>
-                <div class="btn-label">Add to Cart</div>
-            </button>
+           {{ app-add-favorite }}
+           {{ app-standard-button }}
         </div>
     </div>
 </div>

@@ -1,0 +1,12 @@
+
+.price-box > .pricing {
+    font-weight: var(--medium);
+    color: var(--partex-black);
+    font-size: var(--base-size-lg);
+}
+
+.price-box > .pricing>sup {
+    font-size: var(--base-size-reg);
+    font-weight: var(--bold);
+    color: var(--partex-black);
+}

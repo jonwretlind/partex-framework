@@ -12,6 +12,8 @@
   --light:          300; // light weight of font
   --medium:         500; // medium weight of font
   --bold:           700; // bold weight of font
+  --base-size-reg:  1.2rem;
+  --base-size-lg:   2rem;
 
   //page layout
   --unit:          calc(100vw * .015625); // 1/64 of the viewport
@@ -50,7 +52,7 @@ body {
   p, a, ol, ul, li, span {
     font-family: var(--base-font);
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: var(--base-size-reg);
     color: var(--partex-black);
   }
 

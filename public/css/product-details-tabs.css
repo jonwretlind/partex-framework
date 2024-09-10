@@ -1,8 +1,8 @@
 
 .product-characteristics-box {
-    border: 1px solid var(--beige);
+    border: var(--light-border);
     margin: 3.75rem 0rem 0rem 0rem;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .product-characteristics-box>.box-header-row {

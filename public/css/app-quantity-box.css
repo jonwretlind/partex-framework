@@ -1,0 +1,44 @@
+.quantity-box,
+.size-box,
+.price-box,
+.quantity-adjust-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+#btnQuantityDown,
+#btnQuantityUp {
+    cursor: pointer;
+}
+
+.quantity-box > .label,
+.size-box > .label,
+.price-box > .label {
+    font-weight: var(--medium);
+    color: #000;
+}
+
+.quantity-box {
+    flex-basis: 12%;
+}
+
+
+
+.quantity-box > .quantity-input-box {
+    display: flex;
+    gap: 0.5rem;
+    border: var(--light-border);
+    border-radius: 0px;
+}
+
+
+.quantity-box > .quantity-input-box > input {
+    border: unset;
+    background-color: var(--warm-grey);
+    height: 100%;
+    width: 100%;
+    padding: 0rem 0.875rem;
+    font-weight: var(--medium);
+    font-size: var(--base-size-reg);
+}

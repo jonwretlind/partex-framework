@@ -81,3 +81,8 @@
 /* CSS HACK TO REPLACE BUTTON TEXT CONTENT */
 .standard-btn .btn-label span::after { content: "Standard Button"; }
 .lg-standard-btn .btn-label span::after { content: "Large Standard Button"; }
+
+/* NOTE ON USAGE: To dynamically the label on the button, 
+   override the span::after content directive
+   from the CONTAINING PAGE css file.
+*/
