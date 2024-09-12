@@ -3,41 +3,18 @@
   gap: 2rem;
 }
 
-.container-flex>.section-checkboxes {
-  flex-basis: 20%;
-  gap: 3rem 0rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.container-flex>.section-checkboxes>.section-item {}
-
-.container-flex>.section-checkboxes>.section-item>.section-label {
-  font-weight: 700;
-  font-size: 1.125rem;
-  margin-bottom: 1.875rem;
-}
-
-.container-flex>.section-checkboxes>.section-item>.checkbox-options-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem 0rem;
-  padding: 0rem 0rem 0rem 0.875rem;
-}
-
-
-.container-flex>.section-product-showcase {
+.section-product-showcase {
   flex-basis: 80%;
 }
 
-.container-flex>.section-product-showcase>.product-showcase-filter-container {
+.section-product-showcase>.product-showcase-filter-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 
-.container-flex>.section-product-showcase>.section-product-showcase-inner {
+.section-product-showcase>.section-product-showcase-inner {
   flex-wrap: wrap;
   display: flex;
   gap: 3rem 2rem;
@@ -45,11 +22,11 @@
   margin: 3.5rem 0rem;
 }
 
-.container-flex>.section-product-showcase>.section-product-showcase-inner>.product-card-box {
+.section-product-showcase>.section-product-showcase-inner>.product-card-box {
   flex-basis: 22%;
 }
 
-.container-flex>.section-product-showcase>.section-product-showcase-inner>.product-card-box>.product-main-info-box>img {
+.section-product-showcase>.section-product-showcase-inner>.product-card-box>.product-main-info-box>img {
   width: 12rem;
   height: 8rem;
 }

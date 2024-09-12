@@ -1,0 +1,7 @@
+/* css for favorites star icons */
+.icon.star > img {
+    max-width: var(--unit);
+}
+.sm-product-card-box .icon.star > img {
+    max-width: var(--base-size-reg);
+}

@@ -22,8 +22,8 @@
 }
 
 .sm-product-card-box>.product-main-info-box>.product-title-box>.product-title {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: var(--base-size-reg);
+  font-weight: var(--bold);
   flex-grow: 1;
   text-align: center;
 }
@@ -36,7 +36,7 @@
 
 .sm-product-card-box>.view-product-box>span {
   font-weight: 100;
-  font-size: 0.875rem;
+  font-size: var(--base-size-sm);
   color: #fff;
   padding: 0.5rem 0rem;
   display: block;

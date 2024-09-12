@@ -1,0 +1,143 @@
+/* checkboxes styles */
+.checkbox-options-container .control * {
+    transition: var(--fade);
+}
+.checkbox-options-container .control {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 0px calc(var(--unit) / 4);
+}
+.checkbox-options-container > input,
+.checkbox-options-container > span.label {
+    display: inline-block;
+}
+.checkbox-options-container > input.checkbox {
+    border-radius: 0;
+}
+        .control {
+            font-family: arial;
+            display: block;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 5px;
+            padding-top: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+            .control input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+        .control_indicator {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            height: var(--base-size-reg);
+            width: var(--base-size-reg);
+            background: white;
+            border: .5px solid var(--gray);
+            border-radius: 0px;
+        }
+        .control:hover input ~ .control_indicator {
+            background: var(--partex-yellow);
+            border-color: transparent;
+        }
+        
+        .control input:focus ~ .control_indicator {
+            background: var(--light-gray);
+        }
+        
+        .control input:checked ~ .control_indicator {
+            background: var(--gray);
+        }
+        .control:hover input:not([disabled]):checked ~ .control_indicator,
+        .control input:checked:focus ~ .control_indicator {
+            background: var(--graphite);
+            border-color: transparent;
+        }
+        .control input:disabled ~ .control_indicator {
+            background: #e6e6e6;
+            opacity: 0.6;
+            pointer-events: none;
+            border-color: transparent;
+        }
+        .control_indicator:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .control input:checked ~ .control_indicator:after {
+            display: block;
+        }
+        .control-checkbox .control_indicator:after {
+            left: 7px;
+            top: 3px;
+            width: 3px;
+            height: 8px;
+            border: solid #ffffff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .control-checkbox input:disabled ~ .control_indicator:after {
+            border-color: var(--light-gray);
+        }
+        .control-checkbox .control_indicator::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-left: -1.3rem;
+            margin-top: -1.3rem;
+            background: var(--light-gray);
+            border-radius: 3rem;
+            opacity: 0.6;
+            z-index: 99999;
+            transform: scale(0);
+        }
+        @keyframes s-ripple {
+            0% {
+                transform: scale(0);
+            }
+            20% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+        @keyframes s-ripple-dup {
+           0% {
+               transform: scale(0);
+            }
+           30% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+        .control-checkbox input + .control_indicator::before {
+            animation: s-ripple 250ms ease-out;
+        }
+        .control-checkbox input:checked + .control_indicator::before {
+            animation-name: s-ripple-dup;
+        }
+/* DEFAULT LABEL */
+.checkbox-options-container span.label::after {
+    content: "Checkbox Item";
+    position: relative;
+    font-size: var(--base-size-sm);
+    margin-left: var(--unit);
+    top: calc(var(--unit) / 8);
+}

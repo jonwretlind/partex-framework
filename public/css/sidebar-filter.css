@@ -1,0 +1,13 @@
+/* styles for the Shop All page sidebar filter */
+
+.sidebar-section {
+    flex-basis: 20%;
+    gap: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+.sidebar-section > .section-item > .section-label {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 1.875rem;
+  } 

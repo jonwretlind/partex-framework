@@ -12,6 +12,7 @@
   --light:          300; // light weight of font
   --medium:         500; // medium weight of font
   --bold:           700; // bold weight of font
+  --base-size-sm:   1rem;
   --base-size-reg:  1.2rem;
   --base-size-lg:   2rem;
 
@@ -27,6 +28,7 @@
   --shadow:        0 0 8px rgba(0,0,0,.3);
   --light-border:  1px solid var(--light-gray);
   --yellowFade:    yellowFade .25s ease-out; //for btn animations
+  --fade:          all 0.15s ease-out; //for btn animations
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
