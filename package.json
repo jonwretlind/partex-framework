@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./app.js --watch src public components layout scss routes app.js"
+    "start": "node ./app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,9 +11,9 @@
     "express": "^4.19.2",
     "morgan": "~1.9.1",
     "normalize.css": "^8.0.1",
-    "node-sass-middleware": "^1.1.0",
-    "nodemon": "^3.1.4"
+    "node-sass-middleware": "^1.1.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
