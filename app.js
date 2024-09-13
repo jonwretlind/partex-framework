@@ -4,7 +4,7 @@ const path = require('path');
 const sassMiddleware = require('node-sass-middleware');
 //const { pid } = require('process');
 const app = express();
-const port = 80;
+const port = 3000;
 
 // Setup SCSS middleware
 app.use(sassMiddleware({
