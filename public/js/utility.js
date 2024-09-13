@@ -46,7 +46,7 @@ function clearMenu(id) {
 
 // global values
     // Get Page Parameters
-    const rootURL = "http://localhost:3000/"; // global
+    const rootURL = "/"; // global
     let baseURL, pageURL, pageParams; // globals
 
     function getPageURL() {
