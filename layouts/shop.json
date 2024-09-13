@@ -1,5 +1,7 @@
 {
     "template"  : "shopContent",
+    "title": "Shop all products",
+    "subtitle": "Shop by category & application",
     "components": {
         "header": {
           "megamenu" :  {

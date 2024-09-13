@@ -1,6 +1,6 @@
 (function () {
     //DEBUG MODE
-    const debug = true;
+    const debug = false;
     // show debugging grid
     var drawDebugGrid = (units) => {
         if (debug) {

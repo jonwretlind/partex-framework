@@ -1,0 +1,41 @@
+/* Styles for Search Bar Component */
+#Search * {
+    transition: var(--fade);
+}
+#Search {
+    position: relative;
+    top: 2px;
+    width: calc(var(--half-grid-unit) * 4);
+    border: 1px solid var(--light-gray);
+    height: var(--unit);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background-color: var(--beige);
+}
+#Search.focused {
+    position: absolute;
+    width: 100%;
+    border: 1px solid var(--gray);
+    background-color: white;
+}
+
+#Search .search-icon {
+    background: var(--graphite) url("../images/search-icon.png") center center;
+    background-size: contain;
+    width: var(--unit);
+    height: var(--unit);
+}
+
+#Search .search-input > input {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    font-size: var(--base-size-reg);
+}
+
+#Search .search-input > input::placeholder {
+    color: var(--gray);
+}

@@ -1,5 +1,6 @@
 {
     "template"  : "productPage",
+    "title": "Product",
     "components": {
         "header": {
           "megamenu" :  {

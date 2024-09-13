@@ -46,7 +46,8 @@ function clearMenu(id) {
 
 // global values
     // Get Page Parameters
-    const rootURL = "https://partex-framework-b4c35e6a07b4.herokuapp.com/"; // global
+    //const rootURL = "https://partex-framework-b4c35e6a07b4.herokuapp.com/"; // production
+    const rootURL = "http://localhost:3000/"; // local dev
     let baseURL, pageURL, pageParams; // globals
 
     function getPageURL() {
