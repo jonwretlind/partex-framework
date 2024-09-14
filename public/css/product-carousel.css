@@ -1,5 +1,5 @@
 
-.container-product-page>.product-carousel-container {
+.product-carousel-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,26 +7,29 @@
     gap: var(--unit) 0rem;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container {
+.product-carousel-container > .preview-img-container {
     display: flex;
     flex-direction: column;
     gap: var(--unit) 0rem;
-    width: 100%;
+    justify-content: flex-end;
+}
+.product-carousel-container > .preview-img-container > .carousel-image {
+    width: calc(var(--grid-unit) * 5);
+    height: calc(var(--grid-unit) * 4);
+    background-image: url('../images/product-images/partex-marker-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: var(--light-border);
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>img {
-    height: 45vh;
-    max-height: calc(var(--grid-unit) * 5);
-}
-
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box {
+.product-carousel-container > .preview-img-container > .other-product-options-box {
     display: flex;
     gap: var(--unit);
     align-items: center;
     justify-content: space-around;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.thumbnails-container {
+.product-carousel-container > .preview-img-container > .other-product-options-box > .thumbnails-container {
     display: flex;
     gap: 0.875rem;
     overflow-x: scroll;
@@ -34,32 +37,32 @@
     scrollbar-width: none;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.thumbnails-container>.product-item {
+.product-carousel-container > .preview-img-container > .other-product-options-box > .thumbnails-container > .product-item {
     flex-basis: 20%;
     cursor: pointer;
     line-height: 0;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.thumbnails-container>.product-item.active {
+.product-carousel-container > .preview-img-container > .other-product-options-box > .thumbnails-container > .product-item.active {
     border: 1px solid #000;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.thumbnails-container>.product-item>img {
+.product-carousel-container > .preview-img-container > .other-product-options-box > .thumbnails-container > .product-item > img {
     width: 8rem;
     height: 6rem;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.forward-icon-box,
+.product-carousel-container > .preview-img-container > .other-product-options-box > .forward-icon-box,
 .backward-icon-box {
     cursor: pointer;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.backward-icon-box {
+.product-carousel-container > .preview-img-container > .other-product-options-box > .backward-icon-box {
     rotate: 180deg;
 }
 
-.container-product-page>.product-carousel-container>.preview-img-container>.other-product-options-box>.forward-icon-box>img,
-.backward-icon-box>img {
+.product-carousel-container > .preview-img-container > .other-product-options-box > .forward-icon-box > img,
+.backward-icon-box > img {
     width: 0.9rem;
     height: 2.813rem;
 }

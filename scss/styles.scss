@@ -97,6 +97,12 @@ body {
       border: var(--grid-border);
     }
   } 
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
  
   .logo {
     background-image: url('/images/partex-logo.png');

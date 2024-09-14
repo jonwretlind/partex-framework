@@ -1,0 +1,42 @@
+.med-product-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 29%;
+}
+
+.med-product-card .product-main-info-box {
+    background-color: var(--light-beige);
+    text-align: center;
+    padding: var(--unit);
+    padding-bottom: calc(var(--unit) / 2);
+    border: var(--light-border);
+}
+
+.med-product-card .product-main-info-box img {
+    width: 80%;
+    height: auto;
+}
+
+.med-product-card .product-main-info-box .product-title-box {
+    display: flex;
+    align-items: center;
+}
+
+.med-product-card .product-main-info-box .product-title-box .product-title {
+    flex-grow: 1;
+    font-weight: var(--medium);
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.med-product-card .product-main-info-box .product-title-box .product-fav-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.med-product-card .product-main-info-box .product-title-box .product-fav-icon>img {
+    width: 100%;
+    height: auto;
+}
