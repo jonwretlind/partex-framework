@@ -26,6 +26,7 @@ const readFile = (filePath) => {
 // Route to render a page based on a layout JSON
 app.get('/:page', (req, res) => {
   const page = req.params.page;
+  console.log("page template: ", page);
   const layoutPath = path.join(__dirname, 'layouts', `${page}.json`);
   const templateHead = path.join(__dirname, 'templates', 'templateHead.html');
   const templateFoot = path.join(__dirname, 'templates', 'templateFoot.html');
