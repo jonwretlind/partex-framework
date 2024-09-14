@@ -1,6 +1,8 @@
 (function () {
     //DEBUG MODE
-    const debug = false;
+    let url = getPageURL();
+    const debug = pageParams.get('debug'); 
+    console.log("URL: ", url, "\nDebug=", debug);
     // show debugging grid
     var drawDebugGrid = (units) => {
         if (debug) {
