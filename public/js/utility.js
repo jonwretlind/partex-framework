@@ -46,8 +46,6 @@ function clearMenu(id) {
 
 // global values
     // Get Page Parameters
-    //const rootURL = "https://partex-framework-b4c35e6a07b4.herokuapp.com/"; // production
-    const rootURL = "http://localhost:3000/"; // local dev
     let baseURL, pageURL, pageParams; // globals
 
     function getPageURL() {
@@ -101,7 +99,29 @@ function waitForElement(selector) {
         });
     });
 }
-
+// set cookies
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+// get cookie values
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }; 
 // Timer functions
 // timer with pause function
 class Timer{

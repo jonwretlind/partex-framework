@@ -31,8 +31,6 @@ function setSubmenu(sub) {
 // populates the markers listing window depending on selected category
 function categoriesListings(category, catLabel) {
     console.log('  -----> categoriesListings()');
-    // GLOBALS 
-
     /* ========= READING AND FILTERING MENUS ========== */
     // read relative to public folder
     readFile('./schema/products-data.json', async (data) => {
@@ -50,7 +48,7 @@ function categoriesListings(category, catLabel) {
                 // note: the first parameter is fed into appendParameter
                 // the others follow in the paramter string.
                 let paramStr = catId + "&sub=" + subProdId + "&uid=" + prodData[item].uid;
-                let link = appendParameter(rootURL + "product", "cat", paramStr);
+                let link = appendParameter(getCookie("rootURL") + "product", "cat", paramStr);
                 menuHtml += `<div class='list-item-container'><div class='submenu-category-listing-item'><a href='${link}'><div class='submenu-listing-image' style='background-image: url("${prodData[item].imageUrl}");'></div><div class="label">${prodData[item].productName}</div></a></div></div>`;
             };
 

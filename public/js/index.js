@@ -1,8 +1,19 @@
-(function () {
-    //DEBUG MODE
+// =========== GLOBALS ============
+//DEBUG MODE
     let url = getPageURL();
     const debug = pageParams.get('debug'); 
     console.log("URL: ", url, "\nDebug=", debug);
+
+    // SET LOCAL ROOT URL VAR
+    //check first time only
+    if (!getCookie("rootURL")) { let rootURL;
+    (debug)? 
+         rootURL = "http://localhost:3000/" : // local dev
+         rootURL = "https://partex-framework-b4c35e6a07b4.herokuapp.com/"; // production
+        setCookie("rootURL", rootURL, 1);
+    }
+
+(function () {  
     // show debugging grid
     var drawDebugGrid = (units) => {
         if (debug) {

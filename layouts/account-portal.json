@@ -1,0 +1,18 @@
+{
+    "template"  : "accountPortal",
+    "title": "Account Portal",
+    "components": {
+        "header": {
+          "megamenu" :  {
+            "megamenu-panel-content" : {},
+            "megamenu-subpanel" : {}
+          },
+          "search" :    {},
+          "iconsmenu" : {}
+        },
+        "account-portal": {
+        },
+        "footer": {}
+      }
+  }
+    
