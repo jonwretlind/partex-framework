@@ -25,5 +25,5 @@
 │   └── schema                      // Dummy scehma/data used in prototype          __
 ├── routes                          // General routing for template engine          __
 ├── scss                            // Base SCSS styles                             __
-└── templates                       // Base <head> and <footer> for prototype       __
+└── templates                       // Base \<head\> and \<footer\> for prototype       __
 </pre>
