@@ -1,25 +1,31 @@
 **PARTEX FRAMEWORK ReadMe**
 
-**Directory Structure:**
+***PROTOTYPE / TEMPLATE ENGINE DIRECTORIES***
 
-partex-framework        // contains app.js and package.json config files
 
--- layouts                          // json file describing structure of each page
+├── layouts                         // JSON page schema
+├── node_modules                    // All node modules
+├── public                          // All static HTML, CSS, JS     
+│   ├── components                  // HTML components
+│   │   └── static-templates        // full static page layouts, no interactivity
+│   │       └── css-umer            // CSS for static page layouts
+│   ├── css                         // CSS components matching HTML components
+│   ├── documents                   // Misc files needed for documentation
+│   ├── images                      // images used in interactive prototype
+│   │   ├── about-images
+│   │   ├── backgrounds
+│   │   ├── carousel-images
+│   │   ├── marking-methods-img
+│   │   ├── product-images
+│   │   ├── product-line-up-images
+│   │   ├── products
+│   │   ├── solutions-pag-images
+│   │   └── static
+│   ├── js                          //JS file matching HTML components
+│   │   └── unused
+│   └── schema                      // Dummy scehma/data used in interactive prototype
+├── routes                          // General routing for template engine
+├── scss                            // Base SCSS styles
+└── templates                       // Base <head> and <footer> for prototype
 
--- node\_modules           // node v.20.15.1, expressjs v. 4.19.2
-
--- public                             // contains all the frontend components
-
-`        `-- components        // html components
-
-`        `-- css                           // css for each component
-
-`        `-- images                  // images for front-end
-
-`        `-- js                             // plain vanilla js for front-end actions and components
-
--- routes                           // routes added for page nav
-
--- scss	                             // core styles used globally defining all the colors, fonts and base styles
-
--- templates                   // global html that wraps the page templates
+723 directories
