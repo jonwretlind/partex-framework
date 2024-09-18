@@ -41,6 +41,10 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+<<<<<<< HEAD
+=======
+public/documents/
+>>>>>>> 8d460b1 (update)
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/

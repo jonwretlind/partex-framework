@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 **PARTEX FRAMEWORK ReadMe**
 
 ***PROTOTYPE / TEMPLATE ENGINE DIRECTORIES***
+=======
+**PARTEX FRAMEWORK**
+
+**PROTOTYPE / TEMPLATE ENGINE DIRECTORIES**
+>>>>>>> 8d460b1 (update)
 
 
 ├── layouts                         // JSON page schema
