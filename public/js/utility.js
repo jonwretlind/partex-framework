@@ -26,9 +26,16 @@ function rollOut(eleId, targetID, targetID2) {
     ele.classList.remove('active');
 }
 // removes 'active' from a set of elements defined by a class
+let flag = false; //global
 function removeActive(ele) {
-    const select = document.querySelector(ele);
-    if (select) select.classList.remove("active");
+    const Promo = document.getElementById("MegamenuPromoSlider");
+    Promo.addEventListener('mouseover', function() { console.log("hovering promo"); flag = true });
+    Promo.addEventListener('mouseleave', function() { flag = false });
+    // jump out of function if user is hovering over a promo slider;
+    if (flag == true) { return } else {
+        const select = document.querySelector(ele);
+        if (select) select.classList.remove("active");
+    }; 
 }
 // clears all menus
 function clearMenu(id) {

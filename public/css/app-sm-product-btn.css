@@ -3,6 +3,7 @@
     background-color: var(--graphite);
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
 }
 .view-product-box:hover,
 .product-card .view-product-box:hover {
@@ -13,11 +14,11 @@
 .view-product-box span,
 .product-card .view-product-box span {
     text-align: center;
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: var(--base-size-med);
+    font-weight: var(--regular);
     color: #fff;
     margin: calc(var(--unit) / 2) 0;
-    line-height: 1.5rem;
+    line-height: 1;
     display: block;
 }
 /* CSS HACK TO ADD LABEL TO BUTTON */

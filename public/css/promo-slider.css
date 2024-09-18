@@ -1,0 +1,25 @@
+.promo-slider {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+}
+.promo-slider .slide {
+    width: 335px;
+    height: 259px;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-slider > img {
+
+}
+.promo-slider .slide-title {
+    text-align: center; 
+    color: var(--partex-black); 
+    font-size: var(--base-size-med); 
+    font-weight: var(--medium); 
+    word-wrap: break-word
+}

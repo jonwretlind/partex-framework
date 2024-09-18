@@ -55,4 +55,10 @@
 
 .megamenu-subpanel {
     width: 100%;
+    display: flex;
+}
+div#MegamenuPromoSlider {
+    width: calc(var(--grid-unit) * 3);
+    height: calc(var(--grid-unit) * 3);
+    right: var(--half-grid-unit);
 }

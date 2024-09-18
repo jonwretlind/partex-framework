@@ -45,8 +45,9 @@
             let submenuID = 'MegamenuPanel_' + submenus[sub].item;
             submenuContainer[sub] = document.getElementById(submenuID);
             submenuLabel = "{{ " + submenus[sub].label + " }}";
+            let promo = "{{ promo-slider }}";
             var str = '#MegamenuContainer.active .active';
-            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive('${str}'); console.log('Megamenu - mouseleave');">${submenuLabel}</div>`;
+            submenuContHtml  = `<div class='megamenu-subpanel' onmouseleave="removeActive('${str}'); console.log('Megamenu - mouseleave');">${submenuLabel}<div id="MegamenuPromoSlider">${promo}</div></div>`;
             // add submenu containers
             submenuContainer[sub].innerHTML = submenuContHtml;
         }
