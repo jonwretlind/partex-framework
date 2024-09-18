@@ -22,6 +22,7 @@
     text-decoration: none;
     color: var(--graphite);
     font-weight: var(--medium);
+    font-size: var(--base-size-sm);
 }
 
 #Megamenu li.menu.item > a:hover {

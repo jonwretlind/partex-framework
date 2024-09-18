@@ -15,6 +15,8 @@
     flex-direction: row;
     width: 100%;
     padding-right: var(--unit);
+    position: relative;
+    top: 5px;
 }
 #IconsMenu .icon {
     width: var(--unit);
@@ -24,4 +26,6 @@
 } 
 #IconsMenu .sm-brand-box {
     margin: 0 0 0 auto;
+    position: relative;
+    top: 5px;
 }

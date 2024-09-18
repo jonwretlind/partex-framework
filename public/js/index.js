@@ -11,7 +11,7 @@
          rootURL = "http://localhost:3000/" : // local dev
          rootURL = "https://partex-framework-b4c35e6a07b4.herokuapp.com/"; // production
         setCookie("rootURL", rootURL, 1);
-    }
+    };
 
 (function () {  
     // show debugging grid
