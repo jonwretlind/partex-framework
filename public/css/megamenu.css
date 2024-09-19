@@ -62,7 +62,7 @@ div#MegamenuPromoSlider {
     height: calc(var(--grid-unit) * 3);
     right: var(--half-grid-unit);
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1920px) {
 
     #Megamenu li.menu.item > a {
         text-decoration: none;
