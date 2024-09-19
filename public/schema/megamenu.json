@@ -27,6 +27,11 @@
         "label": "About Us",
         "link":  "/about",
         "submenu" : "about-us-submenu"
+        },
+        {
+        "label": "Support",
+        "link":  "/support",
+        "submenu" : "support-submenu"
         }
     ]
 } 

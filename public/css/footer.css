@@ -14,7 +14,7 @@ footer .col {
     text-align: left;
 }
 footer .col {
-    border-left: 2px solid var(--graphite);
+    border-left: 1px solid var(--graphite);
     height: 90%;
 }
 footer .col:first-child {
