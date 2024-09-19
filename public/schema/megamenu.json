@@ -16,7 +16,7 @@
         "submenu" : "solutions-submenu"
         },
         {
-        "label": "Shop All",
+        "label": "Shop",
         "link":  "/shop?page=all"
         },
         {
