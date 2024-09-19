@@ -1,0 +1,64 @@
+footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: var(--half-grid-unit);
+    gap: var(--grid-unit);
+    justify-content: flex-start;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--unit);
+    text-align: left;
+}
+footer .col {
+    border-left: 2px solid var(--graphite);
+    height: 90%;
+}
+footer .col:first-child {
+    border-left: unset;
+}
+footer .address > table, 
+footer .address > table a {
+    font-size: var(--base-size-sm);
+}
+footer .address > table td {
+    padding: 0 calc(var(--unit) / 2) 0 0;
+}
+footer ul.nav {
+    margin-top: unset;
+    font-size: var(--base-size-sm);
+    line-height: 1.5rem;
+    list-style: none;
+    padding: 0 0 0 calc(var(--unit) / 2);
+}
+footer ul.nav li a {
+    font-size: var(--base-size-sm);
+}
+footer .newsletter-form {
+    padding: 0 0 0 calc(var(--unit) / 2);
+}
+footer .newsletter-form h4 {
+    margin-top: unset;
+    margin-bottom: calc(var(--unit) / 2);
+}
+footer .newsletter-form .email {
+    display: flex;
+}
+footer .newsletter-form input[type="text"] {
+    padding: 5px;
+    height: var(--unit);
+    width: 100%;
+    border: unset;
+}
+footer button.newsletter-btn {
+    background-color: var(--partex-black);
+    border: none;
+    border-radius: unset;
+    color: white;
+}
+footer .copyright {
+    font-size: 0.8rem;
+}
