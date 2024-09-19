@@ -2,7 +2,7 @@
 This is the repository for the Partex front-end framework project. Here, you will find code and documentation regarding the visual design, HTML, CSS and JS components used in the design system for the 2024-2025 Partex company website.
 
 **PROTOTYPE WEBSITE**
-The prototype website used for user testing and development is currently hosted on a nodejs v20+ dyno on Heroku here: PROTOTYPE DEVELOPMENT WEBSITE 
+The prototype website used for user testing and development is currently hosted on a nodejs v20+ dyno on Heroku here: <a href="https://partex-framework-b4c35e6a07b4.herokuapp.com/home">PROTOTYPE DEVELOPMENT WEBSITE</a> 
 
 **PROTOTYPE / TEMPLATE ENGINE DIRECTORIES**
 <pre>
