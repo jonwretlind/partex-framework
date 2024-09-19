@@ -5,7 +5,6 @@
 #Search {
     position: relative;
     top: 2px;
-    width: calc(var(--half-grid-unit) * 4);
     border: 1px solid var(--light-gray);
     height: var(--unit);
     display: flex;
@@ -31,7 +30,8 @@
     border: none;
     background-color: transparent;
     height: 100%;
-    width: 100%;
+    width: calc(var(--grid-unit) * 3);
+    max-width: 400px;
     border-radius: 0;
     font-size: var(--base-size-reg);
 }

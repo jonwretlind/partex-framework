@@ -21,7 +21,8 @@
   --half-grid-unit:calc(var(--unit) * 2); // 1/32
   --grid-unit:     calc(var(--unit) * 4); // 1/16
   --page-width:    calc(var(--grid-unit) * 16);
-  --content-width:    calc(var(--grid-unit) * 14);
+  --content-width:  calc(var(--grid-unit) * 14);
+  --max-content-width: 1920px;
 
   //misc
   --grid-border:   1px dotted rgba(255, 0, 0, 0.2);
@@ -34,7 +35,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
 
 html {
-  font-size: 1vw;
+  font-size: 20px;
 }
 
 body {
@@ -267,6 +268,17 @@ body {
 // ============================== //
 // =========  MOBILE ============ //
 // ============================== //
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }  
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 22px;
+  }  
+}
 
 @media screen and (max-width: 1024px) {
   //variable overrides
