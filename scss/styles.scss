@@ -101,7 +101,6 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  
  
   .logo {
     background-image: url('/images/partex-logo.png');
@@ -350,6 +349,10 @@ body {
   }//end header
   content {
       padding: var(--grid-unit) var(--half-grid-unit);
+        
+      div[class*="container-"] {
+        flex-direction: column;
+      }  
   }//end content
 }//end 980px
 
