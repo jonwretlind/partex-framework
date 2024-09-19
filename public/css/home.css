@@ -2,18 +2,18 @@
     margin-bottom: 9.3rem;
 }
 
-.container-top-solutions>.section-heading {
+.container-top-solutions > .section-heading {
     text-align: center;
     margin-bottom: 2.8rem;
 }
 
-.container-top-solutions>.section-heading>p {
+.container-top-solutions > .section-heading > p {
     font-weight: var(--medium);
     font-size: 2rem;
     color: #000;
 }
 
-.container-top-solutions>.top-solutions-inner {
+.container-top-solutions > .top-solutions-inner {
     width: 65%;
     margin: auto;
     display: flex;
@@ -22,7 +22,7 @@
     gap: 5rem 1rem;
 }
 
-.container-top-solutions>.top-solutions-inner>.solution-item {
+.container-top-solutions > .top-solutions-inner > .solution-item {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -30,17 +30,17 @@
     flex-basis: 30%;
 }
 
-.container-top-solutions>.top-solutions-inner>.solution-item>.imgae-box {
+.container-top-solutions > .top-solutions-inner > .solution-item > .imgae-box {
     width: 6.5rem;
     height: 6.5rem;
 }
 
-.container-top-solutions>.top-solutions-inner>.solution-item>.imgae-box>img {
+.container-top-solutions > .top-solutions-inner > .solution-item > .imgae-box > img {
     width: 100%;
     height: auto;
 }
 
-.container-top-solutions>.top-solutions-inner>.solution-item>.label-box {
+.container-top-solutions > .top-solutions-inner > .solution-item > .label-box {
     font-weight: var(--medium);
     font-size: 1.125rem;
     color: #000;
@@ -51,16 +51,16 @@
     gap: 1.5rem;
 }
 
-.container-company-intro>.main-image-box {
+.container-company-intro > .main-image-box {
     flex-basis: 40%;
 }
 
-.container-company-intro>.main-image-box>img {
+.container-company-intro > .main-image-box > img {
     width: 100%;
     height: auto;
 }
 
-.container-company-intro>.content-section {
+.container-company-intro > .content-section {
     flex-basis: 60%;
 
     display: flex;
@@ -68,19 +68,19 @@
     gap: 1.5rem;
 }
 
-.container-company-intro>.content-section>.comapany-intro-box {
+.container-company-intro > .content-section > .comapany-intro-box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.container-company-intro>.content-section>.comapany-intro-box>.heading {
+.container-company-intro > .content-section > .comapany-intro-box > .heading {
     font-weight: var(--medium);
     font-size: 1.5rem;
     margin: unset;
 }
 
-.container-company-intro>.content-section>.comapany-intro-box>.description {
+.container-company-intro > .content-section > .comapany-intro-box > .description {
     font-weight: var(--light);
     font-size: 1rem;
     color: var(--partex-black);
@@ -91,7 +91,7 @@
 
 
 @media screen and (max-width: 1600px) {
-    .container-mark-online>.mark-online-inner {
+    .container-mark-online > .mark-online-inner {
         padding: 4rem var(--half-grid-unit);
         width: -webkit-fill-available;
     }
