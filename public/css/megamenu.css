@@ -22,7 +22,7 @@
     text-decoration: none;
     color: var(--graphite);
     font-weight: var(--medium);
-    font-size: var(--base-size-sm);
+    font-size: var(--base-size-reg);
 }
 
 #Megamenu li.menu.item > a:hover {
