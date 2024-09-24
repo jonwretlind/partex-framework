@@ -29,3 +29,7 @@
     position: relative;
     top: 5px;
 }
+span.icon-star-empty {
+    top: -4px;
+    position: relative;
+}

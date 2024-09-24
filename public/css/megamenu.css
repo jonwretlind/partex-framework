@@ -16,13 +16,15 @@
 
 #Megamenu li.menu.item {
     display: block;
+    margin-right: var(--unit);
 }
 
 #Megamenu li.menu.item > a {
     text-decoration: none;
     color: var(--graphite);
     font-weight: var(--medium);
-    font-size: var(--base-size-reg);
+    font-size: var(--base-size-sm);
+    white-space: nowrap;
 }
 
 #Megamenu li.menu.item > a:hover {
@@ -62,12 +64,9 @@ div#MegamenuPromoSlider {
     height: calc(var(--grid-unit) * 3);
     right: var(--half-grid-unit);
 }
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 2400px) {
 
     #Megamenu li.menu.item > a {
-        text-decoration: none;
-        color: var(--graphite);
-        font-weight: var(--medium);
-        font-size: var(--base-size-sm);
+        font-size: var(--base-size-reg);
     }
 }
