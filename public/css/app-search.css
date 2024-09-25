@@ -29,7 +29,6 @@
 
 #Search .search-btn:hover {
     transform: scale(1.2);
-    border: 2px solid var(--gray);
     background-color: var(--partex-yellow);
     cursor:pointer;
 }
@@ -48,6 +47,14 @@
 #Search .search-input > input::placeholder {
     color: var(--gray);
     font-weight: var(--light);
+}
+
+#Search span.icon-search {
+    color: white;
+}
+
+#Search .search-btn:hover span.icon-search {
+    color: var(--partex-black);
 }
 
 @media screen and (min-width: 2400px) {
